@@ -15,155 +15,39 @@ st.set_page_config(
 # ── CSS ───────────────────────────────────────────────────────────────────────
 st.markdown("""
 <style>
-    @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=DM+Serif+Display:ital@0;1&display=swap');
-
-    :root {
-        --ink:       #0f1923;
-        --slate:     #1e3448;
-        --teal:      #0d7a6e;
-        --teal-mid:  #0fa898;
-        --teal-lt:   #d4f0ec;
-        --amber:     #e8913a;
-        --amber-lt:  #fdf0e3;
-        --rose:      #c94f4f;
-        --rose-lt:   #fbeaea;
-        --surface:   #ffffff;
-        --bg:        #f0f4f7;
-        --border:    #dde4eb;
-        --muted:     #6b7e8f;
-    }
-
-    * { font-family: 'DM Sans', sans-serif; }
-
-    [data-testid="stAppViewContainer"] {
-        background: var(--bg);
-        background-image: radial-gradient(circle at 80% 10%, rgba(13,122,110,0.06) 0%, transparent 55%),
-                          radial-gradient(circle at 10% 90%, rgba(30,52,72,0.05) 0%, transparent 50%);
-    }
-
-    /* ── Header ── */
+    [data-testid="stAppViewContainer"] { background: #f4f6f9; }
     .header-bar {
-        background: var(--slate);
-        background-image: linear-gradient(135deg, #0f1923 0%, #1e3448 50%, #0d4a60 100%);
-        color: white;
-        padding: 28px 32px;
-        border-radius: 14px;
-        margin-bottom: 28px;
-        position: relative;
-        overflow: hidden;
+        background: linear-gradient(90deg, #1b4f72, #2e86c1);
+        color: white; padding: 22px 28px;
+        border-radius: 10px; margin-bottom: 24px;
     }
-    .header-bar::before {
-        content: '';
-        position: absolute;
-        top: -40px; right: -40px;
-        width: 200px; height: 200px;
-        border-radius: 50%;
-        background: radial-gradient(circle, rgba(13,168,152,0.25) 0%, transparent 70%);
-        pointer-events: none;
-    }
-    .header-bar::after {
-        content: '';
-        position: absolute;
-        bottom: -20px; left: 30%;
-        width: 120px; height: 120px;
-        border-radius: 50%;
-        background: radial-gradient(circle, rgba(232,145,58,0.15) 0%, transparent 70%);
-        pointer-events: none;
-    }
-    .header-bar h1 {
-        margin: 0;
-        font-family: 'DM Serif Display', serif;
-        font-size: 2rem;
-        color: white;
-        letter-spacing: -0.02em;
-    }
-    .header-bar p {
-        margin: 6px 0 0;
-        opacity: 0.72;
-        font-size: 0.92rem;
-        font-weight: 300;
-        letter-spacing: 0.01em;
-    }
-
-    /* ── Result cards ── */
+    .header-bar h1 { margin: 0; font-size: 1.8rem; color: white; }
+    .header-bar p  { margin: 4px 0 0; opacity: 0.85; font-size: 0.95rem; }
     .result-card {
-        background: var(--surface);
-        border-left: 4px solid var(--border);
-        padding: 14px 20px;
-        margin: 7px 0;
-        border-radius: 0 10px 10px 0;
-        box-shadow: 0 1px 3px rgba(15,25,35,0.06), 0 4px 12px rgba(15,25,35,0.04);
-        transition: box-shadow 0.2s ease;
+        background: white; border-left: 5px solid #2e86c1;
+        padding: 14px 18px; margin: 8px 0;
+        border-radius: 0 8px 8px 0; box-shadow: 0 1px 4px rgba(0,0,0,0.07);
     }
-    .result-card:hover { box-shadow: 0 2px 8px rgba(15,25,35,0.1), 0 6px 20px rgba(15,25,35,0.06); }
-    .result-card.found { border-left-color: var(--teal); }
-    .result-card.error { border-left-color: var(--rose); }
-
-    .plan-label  { font-size: 1rem; font-weight: 600; color: var(--ink); letter-spacing: -0.01em; }
-    .payer-label { font-size: 0.83rem; color: var(--muted); margin-bottom: 5px; }
-
-    /* ── Tags ── */
-    .tag-found {
-        background: var(--teal-lt); color: var(--teal);
-        padding: 2px 10px; border-radius: 20px;
-        font-size: 0.75rem; font-weight: 700; letter-spacing: 0.02em;
-    }
-    .tag-not {
-        background: var(--rose-lt); color: var(--rose);
-        padding: 2px 10px; border-radius: 20px;
-        font-size: 0.75rem; font-weight: 700;
-    }
-    .tag-error {
-        background: var(--amber-lt); color: var(--amber);
-        padding: 2px 10px; border-radius: 20px;
-        font-size: 0.75rem; font-weight: 600;
-    }
-
-    .url-link { font-size: 0.77rem; color: var(--teal-mid); word-break: break-all; }
-
-    /* ── Summary box ── */
-    .summary-box {
-        display: flex;
-        gap: 0;
-        background: var(--surface);
-        border-radius: 12px;
-        padding: 0;
-        margin-bottom: 22px;
-        box-shadow: 0 1px 3px rgba(15,25,35,0.06), 0 4px 12px rgba(15,25,35,0.04);
-        overflow: hidden;
-        border: 1px solid var(--border);
-    }
-    .stat {
-        text-align: center;
-        flex: 1;
-        padding: 20px 16px;
-        border-right: 1px solid var(--border);
-    }
-    .stat:last-child { border-right: none; }
-    .stat-num { font-size: 2.1rem; font-weight: 800; color: var(--slate); line-height: 1; }
-    .stat-num.green { color: var(--teal); }
-    .stat-label { font-size: 0.72rem; color: var(--muted); margin-top: 4px; text-transform: uppercase; letter-spacing: 0.08em; font-weight: 500; }
-
-    .index-info { font-size: 0.73rem; color: #b0bcc8; margin-top: 6px; }
-
-    /* ── Expander ── */
-    [data-testid="stExpander"] summary p { color: var(--slate) !important; font-weight: 600; }
-    [data-testid="stExpander"] summary:hover { background-color: transparent !important; }
+    .result-card.found { border-left-color: #1e8449; }
+    .result-card.error { border-left-color: #e74c3c; }
+    .plan-label  { font-size: 1.05rem; font-weight: 700; color: #1a1a1a; }
+    .payer-label { font-size: 0.85rem; color: #555; margin-bottom: 4px; }
+    .tag-found { background:#d5f5e3; color:#1e8449; padding:2px 9px; border-radius:12px; font-size:0.78rem; font-weight:700; }
+    .tag-not   { background:#fdecea; color:#c0392b; padding:2px 9px; border-radius:12px; font-size:0.78rem; font-weight:700; }
+    .tag-error { background:#fff3cd; color:#856404; padding:2px 9px; border-radius:12px; font-size:0.78rem; }
+    .url-link  { font-size: 0.78rem; color: #2e86c1; word-break: break-all; }
+    .summary-box { display:flex; gap:32px; background:white; border-radius:10px; padding:18px 22px; margin-bottom:20px; box-shadow:0 1px 4px rgba(0,0,0,0.07); }
+    .stat { text-align:center; }
+    .stat-num { font-size:2rem; font-weight:800; color:#2e86c1; }
+    .stat-num.green { color:#1e8449; }
+    .stat-label { font-size:0.78rem; color:#777; }
+    .index-info { font-size:0.75rem; color:#aaa; margin-top:6px; }
+    header[data-testid="stHeader"] { display: none !important; }
+    #MainMenu { display: none !important; }
+    footer { display: none !important; }
+    [data-testid="stExpander"] summary p { color: #001f5b !important; font-weight: 600; }
+    [data-testid="stExpander"] summary:hover { background-color: transparent !important; color: inherit !important; }
     [data-testid="stExpander"] summary { list-style: none; }
-
-    /* ── Streamlit button overrides ── */
-    [data-testid="stFormSubmitButton"] button {
-        background: var(--teal) !important;
-        border: none !important;
-        border-radius: 8px !important;
-        color: white !important;
-        font-weight: 600 !important;
-        letter-spacing: 0.01em !important;
-        transition: background 0.2s ease !important;
-    }
-    [data-testid="stFormSubmitButton"] button:hover {
-        background: var(--teal-mid) !important;
-    }
 </style>
 """, unsafe_allow_html=True)
 
@@ -171,7 +55,7 @@ st.markdown("""
 st.markdown("""
 <div class="header-bar">
   <h1>💊 Formulary Drug Search</h1>
-  <p>Search across insurance formularies instantly — results include direct links to source documents.</p>
+  <p>Search most insurance formularies, results will be displayed with links.</p>
 </div>
 """, unsafe_allow_html=True)
 
@@ -222,6 +106,47 @@ def search_entries(entries, keyword, group_filter, payer_filter):
     return results
 
 
+
+def extract_tier(text, keyword):
+    """Extract tier info from formulary text near the keyword."""
+    keyword_lower = keyword.strip().lower()
+    text_lower = text.lower()
+    positions = [m.start() for m in re.finditer(re.escape(keyword_lower), text_lower)]
+    if not positions:
+        return None
+    tiers_found = set()
+    for pos in positions:
+        snippet = text[max(0, pos-50):pos+300]
+        m = re.search(r'\bTier\s*(\d+)\b', snippet, re.IGNORECASE)
+        if m:
+            tiers_found.add(f"Tier {m.group(1)}")
+            continue
+        m = re.search(r'\b([1-6][AB]?)\s+QL', snippet)
+        if m:
+            tiers_found.add(f"Tier {m.group(1).rstrip('AB')}")
+            continue
+        m = re.search(r'\bMO\s+([1-6])\b', snippet)
+        if m:
+            tiers_found.add(f"Tier {m.group(1)}")
+            continue
+        m = re.search(r'\b([1-6])\s+(?:PA|ST)\b', snippet)
+        if m:
+            tiers_found.add(f"Tier {m.group(1)}")
+            continue
+        m = re.search(r'\b\d[\d\-\.]*\s*mg\s+([1-6])\b', snippet)
+        if m:
+            tiers_found.add(f"Tier {m.group(1)}")
+            continue
+        m = re.search(r'\b(BASIC CORE|EXTENDED CORE|BASIC|EXTENDED)\b', snippet, re.IGNORECASE)
+        if m:
+            tiers_found.add(m.group(1).title())
+            continue
+        m = re.search(r'\bNC\b', snippet)
+        if m:
+            tiers_found.add("Non-Covered")
+            continue
+    return ", ".join(sorted(tiers_found)) if tiers_found else None
+
 # ── Search UI ─────────────────────────────────────────────────────────────────
 with st.form("search_form"):
     col_search, col_btn = st.columns([5, 1])
@@ -229,6 +154,18 @@ with st.form("search_form"):
         keyword = st.text_input("Drug / keyword", placeholder="e.g.  metformin", label_visibility="collapsed")
     with col_btn:
         go = st.form_submit_button("🔍 Search", use_container_width=True, type="primary")
+
+# ── External reference buttons ───────────────────────────────────────────────
+if go and keyword.strip():
+    goodrx_url = "https://www.goodrx.com/" + keyword.strip().lower().replace(' ', '-')
+else:
+    goodrx_url = "https://www.goodrx.com"
+
+col1, col2, col3 = st.columns([3, 1, 1])
+with col2:
+    st.markdown(f'<a href="{goodrx_url}" target="_blank" style="display:block;text-align:center;background:#e05c00;color:white;padding:8px 0;border-radius:6px;font-size:0.85rem;font-weight:600;text-decoration:none;">💊 GoodRx</a>', unsafe_allow_html=True)
+with col3:
+    st.markdown('<a href="https://www.openevidence.com" target="_blank" style="display:block;text-align:center;background:#2c5f8a;color:white;padding:8px 0;border-radius:6px;font-size:0.85rem;font-weight:600;text-decoration:none;">🔬 OpenEvidence</a>', unsafe_allow_html=True)
 
 if go and keyword.strip():
     # ── Run search ────────────────────────────────────────────────────────────
@@ -255,7 +192,7 @@ if go and keyword.strip():
     for r in (found_results + [] + []):
         plan_label = r.get("plan_name") or r.get("payer") or r.get("plan_group","")
         tier = extract_tier(r.get("text") or "", keyword) if r.get("found") and r.get("text") else None
-        tier_html = f'<span style="background:#d4f0ec;color:#0d7a6e;font-size:0.78rem;padding:2px 8px;border-radius:10px;margin-left:8px;font-weight:600;">{tier}</span>' if tier else ""
+        tier_html = f'<span style="background:#eaf4fb;color:#1a6fa0;font-size:0.78rem;padding:2px 8px;border-radius:10px;margin-left:8px;font-weight:600;">{tier}</span>' if tier else ""
         if r["found"]:
             card_class, tag = "result-card found", ''
         elif r.get("search_error"):
@@ -266,10 +203,6 @@ if go and keyword.strip():
     <div class="{card_class}">
       <div class="plan-label">{plan_label} &nbsp; {tag}{tier_html}</div>
       <div class="url-link"><span style="font-size:0.72rem;color:#888;margin-right:8px;">💡 Once open, press Ctrl+F</span><a href="{r.get('url','')}" target="_blank">{r.get('url','')}</a></div>
-      <div style="margin-top:6px;display:flex;gap:8px;">
-        <a href="https://www.goodrx.com/{keyword.strip().lower().replace(' ','-')}" target="_blank" style="background:#e8913a;color:white;padding:4px 12px;border-radius:6px;font-size:0.78rem;font-weight:600;text-decoration:none;">💊 GoodRx</a>
-        <a href="https://www.openevidence.com" target="_blank" style="background:#0d7a6e;color:white;padding:4px 12px;border-radius:6px;font-size:0.78rem;font-weight:600;text-decoration:none;">🔬 OpenEvidence</a>
-      </div>
     </div>""", unsafe_allow_html=True)
 
 # ── View all formularies ──────────────────────────────────────────────────────
@@ -277,15 +210,14 @@ if not (go and keyword.strip()):
     st.markdown("<div style='height:40vh'></div>", unsafe_allow_html=True)
 with st.expander("📋 View all formularies"):
     rows_html = "".join(
-        f'<tr><td style="padding:7px 14px;border-bottom:1px solid #edf1f5;color:#0f1923;">{e.get("plan_name","")}</td>'
-        f'<td style="padding:7px 14px;border-bottom:1px solid #edf1f5;"><a href="{e.get("url","")}" target="_blank" style="color:#0d7a6e;">{e.get("url","")}</a></td></tr>'
+        f'<tr><td style="padding:6px 12px;border-bottom:1px solid #eee;color:#444444 !important;">{e.get("plan_name","")}</td>'
+        f'<td style="padding:6px 12px;border-bottom:1px solid #eee;"><a href="{e.get("url","")}" target="_blank" style="color:#2e86c1;">{e.get("url","")}</a></td></tr>'
         for e in sorted(entries, key=lambda e: e.get("plan_name","").lower())
     )
     st.markdown(
-        f'<table style="width:100%;border-collapse:collapse;font-size:0.85rem;background:white;color:#0f1923;">'
-        f'<thead><tr>'
-        f'<th style="padding:10px 14px;text-align:left;border-bottom:2px solid #dde4eb;color:#1e3448;font-weight:600;font-size:0.78rem;text-transform:uppercase;letter-spacing:0.06em;">Plan</th>'
-        f'<th style="padding:10px 14px;text-align:left;border-bottom:2px solid #dde4eb;color:#1e3448;font-weight:600;font-size:0.78rem;text-transform:uppercase;letter-spacing:0.06em;">URL</th></tr></thead>'
+        f'<table style="width:100%;border-collapse:collapse;font-size:0.85rem;background:white;color:#444444;">'
+        f'<thead><tr><th style="padding:8px 12px;text-align:left;border-bottom:2px solid #ddd;">Plan</th>'
+        f'<th style="padding:8px 12px;text-align:left;border-bottom:2px solid #ddd;">URL</th></tr></thead>'
         f'<tbody>{rows_html}</tbody></table>',
         unsafe_allow_html=True
     )
