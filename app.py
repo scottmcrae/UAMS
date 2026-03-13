@@ -87,7 +87,7 @@ except Exception:
 
 # ── Search function ───────────────────────────────────────────────────────────
 def search_entries(entries, keyword, group_filter, payer_filter):
-    pattern = re.compile(r'\b' + re.escape(keyword.strip().lower()) + r'\b')
+    pattern = re.compile(re.escape(keyword.strip().lower()))
     results = []
     for e in entries:
         if group_filter != "All Plan Groups" and e.get("plan_group","") != group_filter:
