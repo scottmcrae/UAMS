@@ -1,0 +1,59 @@
+plan_group,payer,,url
+Medicare,United Healthcare (UHC),Medicare Advantage,https://www.uhc.com/medicare/alphadog/AAAR25HM0255450_010
+Medicare,United Healthcare (UHC),Complete Care,https://www.uhc.com/medicare/alphadog/UHAR25PP0255597_010
+Medicare,United Healthcare (UHC),Dual Complete,https://www.uhc.com/medicare/alphadog/CSAR25PP0255531_010
+Medicare,United Healthcare (UHC),Preferred,https://www.uhc.com/medicare/alphadog/PDEX25PD0255336_010
+Medicare,United Healthcare (UHC),Saver,https://www.uhc.com/medicare/alphadog/PDEX25PD0255342_010
+Medicare,Aetna,,https://www.aetna.com/medicare/documents/individual/2025/formularies/FORM_2025_25101B25zHMO_EN.pdf
+Medicare,Aetna,,https://www.aetna.com/medicare/documents/individual/2025/formularies/FORM_2025_25101B25zPPO_EN.pdf
+Medicare,Aetna,,https://www.aetna.com/medicare/documents/individual/2025/formularies/FORM_2025_25101B24bHMODSNP_EN.pdf
+Medicare,Aetna,SilverScript Choice,https://www.aetna.com/medicare/documents/individual/2025/formularies/FORM_2025_25096A2z_EN.pdf
+Medicare,BlueCross BlueShield (Arkansas BlueMedicare),,https://assets.contentstack.io/v3/assets/blte81730ee65c02059/bltcdd0777f2799b589/68dc00291b16f72725dd2fab/2025_ABM_PFFS_HMO_Independence_Formulary_REV.092425-508.pdf
+Medicare,BlueCross BlueShield (Arkansas BlueMedicare),,https://assets.contentstack.io/v3/assets/blte81730ee65c02059/bltcf21024ed7c5f8dd/68dc0052877911209588b09e/2025_ABM_Premier_(HMO)_Classic_Plus_(HMO)_Saver_Choice_(PPO)_Premier_Choice_(PPO)_Formularies_REV.092425-508.pdf
+Medicare,BlueCross BlueShield (Arkansas BlueMedicare),,https://assets.contentstack.io/v3/assets/blte81730ee65c02059/blte1eebf44e75c60a2/68dc00e3877911b07488b0a7/2025_ABM_Premier_RX_(PDP)_Formulary_REV.092425-508.pdf
+Medicare,BlueCross BlueShield (Arkansas BlueMedicare),,https://assets.contentstack.io/v3/assets/blte81730ee65c02059/bltc696e211b536ca24/68dc0108ceb426719bb053ab/2025_ABM_Value_RX_(PDP)_Formulary_REV.092425-508.pdf
+Medicare,Cigna,,https://www.cigna.com/static/www-cigna-com/docs/medicare/plans-services/2025/formulary-mapd.pdf
+Medicare,Cigna,,https://www.cigna.com/static/www-cigna-com/docs/medicare/plans-services/2025/formulary-ds.pdf
+Medicare,Cigna,,https://www.cigna.com/static/www-cigna-com/docs/medicare/plans-services/2025/formulary-saver.pdf
+Medicare,Cigna,,https://www.cigna.com/static/www-cigna-com/docs/medicare/plans-services/2025/formulary-assurance.pdf
+Medicare,Cigna,,https://www.cigna.com/static/www-cigna-com/docs/medicare/plans-services/2025/formulary-extra.pdf
+Medicare,Humana,,https://assets.humana.com/is/content/humana/20250016PDG2545625Cpdf
+Medicare,HumanaChoice - Diabetes and Heart (PPO C-SNP),,https://assets.humana.com/is/content/humana/20250045PDG2546025Cpdf
+Medicare,HumanaChoice - Diabetes and Heart (PPO C-SNP),,https://assets.humana.com/is/content/humana/20250001PDG2542825Cpdf
+Medicare,HumanaChoice - Diabetes and Heart (PPO C-SNP),,https://assets.humana.com/is/content/humana/20250004PDG2545225Cpdf
+Medicare,HumanaChoice - Diabetes and Heart (PPO C-SNP),,https://assets.humana.com/is/content/humana/20250003PDG2545025Cpdf
+Medicare,WellCare,,https://fm.formularynavigator.com/FBO/67/14_6T_Enhanced_Plus_Select_MAPD_Comp_Form_25076.pdf
+Medicare,WellCare,,https://fm.formularynavigator.com/FBO/67/1_1T_Basic_MAPD_Comp_Form_25035.pdf
+Medicare,WellCare,,https://fm.formularynavigator.com/FBO/67/10_6T_Basic_MAPD_Comp_Form_25066.pdf
+Medicare,WellCare,,https://fm.formularynavigator.com/FBO/67/2_1T_Basic_Select_MAPD_Comp_Form_25040.pdf
+Medicare,WellCare,,https://fm.formularynavigator.com/FBO/67/8_5T_Enhanced_PDP_Comp_Form_25061.pdf
+,Ambetter of Arkansas,,https://www.ambetterhealth.com/content/dam/centene/Ambetter%20of%20Arkansas/PDFs/2025-ar-formulary.pdf
+,Ambetter of Arkansas,,https://www.ambetterhealth.com/content/dam/centene/Ambetter%20of%20Arkansas/PDFs/2025-ar-cs-formulary.pdf
+,AR Benefits (Arkansas State & Public School Employees),,https://sas.arkansas.gov/wp-content/uploads/Arkansas-Formulary-2025_09.pdf
+,Arkansas Medicaid / Prime Therapeutics,,https://ar.primetherapeutics.com/documents/268611/269354/Preferred+Drug+List.pdf/533764a9-1715-6daf-8eb5-bbe71e53ca1d?t=1688593048729
+,UMR – UA System Employees (Medimpact),,https://benefits.uasys.edu/uams/health/prescription-drugs
+,BlueAdvantage Administrators of AR,,https://www.blueadvantagearkansas.com/docs/librariesprovider9/members/employer-coverage/resources/2025-standard-with-step-formulary-4-tier.pdf?sfvrsn=b1925dfd_2
+,BlueAdvantage Administrators of AR,,https://www.arkansasbluecross.com/docs/librariesprovider9/members/pharmacy-forms/2025-metallic-6-tier-formulary.pdf?sfvrsn=5b275cfd_17
+,BCBS Federal Employee Program (FEP),Blue Focus,https://www.caremark.com/portal/asset/FEP_Blue_Focus_Formulary.pdf
+,BCBS Federal Employee Program (FEP),Blue Basic,https://www.caremark.com/portal/asset/z6500_drug_list807.pdf
+,BCBS Federal Employee Program (FEP),Blue Standard,https://www.caremark.com/portal/asset/z6500_drug_list.pdf
+Government Employee Health Association (GEHA),,Standard,https://www.caremark.com/content/dam/enterprise/headless/caremark/cmk/en/assets/clinical/drug-lists-client/ltr-g/GEHA_FEHB_StandardDrugList.pdf
+Government Employee Health Association (GEHA),,,https://www.caremark.com/content/dam/enterprise/headless/caremark/cmk/en/assets/clinical/drug-lists-client/ltr-g/GEHA_FEHB_Chart_QR_DrugList.pdf
+Government Employee Health Association (GEHA),,ElevatePlus,https://www.caremark.com/content/dam/enterprise/headless/caremark/cmk/en/assets/clinical/drug-lists-client/ltr-g/GEHA_FEHB_ElevatePlus_DrugList.pdf
+Government Employee Health Association (GEHA),,,https://www.caremark.com/content/dam/enterprise/headless/caremark/cmk/en/assets/clinical/drug-lists-client/ltr-g/GEHA_PSHB_Standard_DrugList.pdf
+Government Employee Health Association (GEHA),,Standard,https://www.caremark.com/content/dam/enterprise/headless/caremark/cmk/en/assets/clinical/drug-lists-client/ltr-g/GEHA_PSHB_Chart_QR_DrugList.pdf
+Government Employee Health Association (GEHA),,,https://www.caremark.com/content/dam/enterprise/headless/caremark/cmk/en/assets/clinical/drug-lists-client/ltr-g/GEHA_PSHB_ElevatePlus_DrugList.pdf
+,Aetna Standard Commercial,,https://fm.formularynavigator.com/FBO/41/2026_Aetna_Standard_Plan.pdf
+,ChampVA,,https://www.va.gov/resources/prescription-medications-covered-through-meds-by-mail/
+,Optum Select Standard,,https://www.optum.com/content/dam/noindex-resources/consumers/pdfs/guides/070125-select-standard-booklet.pdf
+,Optum Premium Standard,,https://www.optum.com/content/dam/noindex-resources/consumers/pdfs/guides/070125-premium-standard-booklet.pdf
+,Optum Premium Value,,https://www.optum.com/content/dam/noindex-resources/consumers/pdfs/guides/070125-premium-value-standard-booklet.pdf
+,QualChoice,,https://www.qualchoice.com/!userfiles/pdfs/Pharmacy/QCA25-AR-H-266_August_Formulary_Update.pdf
+,Tricare,,https://www.express-scripts.com/frontend/open-enrollment/tricare/fst/#/
+,UnitedHealthcare,,https://www.uhcprovider.com/content/dam/provider/docs/public/resources/pharmacy/commercial-pdl-sept-2025.pdf
+Arkansas Blue Medicare,Premier,,https://assets.contentstack.io/v3/assets/blte81730ee65c02059/blt3eabafd625a360dd/premier_rx_pdp_formulary.pdf
+Arkansas Blue Medicare,Value,,https://assets.contentstack.io/v3/assets/blte81730ee65c02059/bltac5af928fd62dbd2/value_rx_pdp_formulary.pdf
+Arkansas Blue Medicare,Premier (HMO),,https://assets.contentstack.io/v3/assets/blte81730ee65c02059/blt6097525d07fd1f1f/hmo_pffs_formulary.pdf
+Arkansas Blue Medicare,Independence (HMO),,https://assets.contentstack.io/v3/assets/blte81730ee65c02059/blt6097525d07fd1f1f/hmo_pffs_formulary.pdf
+Arkansas Blue Medicare,Classic Plus (HMO),,https://assets.contentstack.io/v3/assets/blte81730ee65c02059/blt6097525d07fd1f1f/hmo_pffs_formulary.pdf
+Arkansas Blue Medicare,Preferred (PFFS),,https://assets.contentstack.io/v3/assets/blte81730ee65c02059/blt6097525d07fd1f1f/hmo_pffs_formulary.pdf
