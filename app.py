@@ -618,63 +618,76 @@ if go and keyword.strip():
                     kw_pat   = re.compile(re.escape(drug_term), re.IGNORECASE)
                     kw_match = kw_pat.search(pa_criteria_text)
 
+                    # Find the drug's section: walk back to nearest ALL CAPS heading, forward to next
                     if kw_match:
-                        # Walk back to find the start of this drug's section heading
-                        # (look for ALL CAPS drug name or "Products Affected" before the match)
-                        section_pat = re.compile(
-                            r'(?:^|\n)([A-Z][A-Z\s\-/,\(\)]{4,})\n|(?:^|\n)(Products Affected)',
-                            re.MULTILINE
-                        )
-                        section_start = max(0, kw_match.start() - 2000)
-                        section_text  = pa_criteria_text[section_start:kw_match.start()]
-                        last_heading  = None
-                        for sm in section_pat.finditer(section_text):
-                            last_heading = section_start + sm.start()
-                        start = last_heading if last_heading is not None else max(0, kw_match.start() - 100)
-
-                        # Find the end: next ALL CAPS drug heading after the match
-                        next_section = re.search(
-                            r'\n[A-Z][A-Z\s\-/,\(\)]{6,}\n',
-                            pa_criteria_text[kw_match.end():]
-                        )
-                        if next_section:
-                            end = kw_match.end() + next_section.start()
-                        else:
-                            end = min(len(pa_criteria_text), kw_match.end() + 2000)
-
-                        snippet = pa_criteria_text[start:end].strip()
+                        next_section = re.search(r'\n[A-Z][A-Z\s\-/,\(\)]{6,}\n', pa_criteria_text[kw_match.end():])
+                        end   = kw_match.end() + next_section.start() if next_section else min(len(pa_criteria_text), kw_match.end() + 3000)
+                        prev_heading = list(re.finditer(r'(?:^|\n)([A-Z][A-Z\s\-/,\(\)]{4,})\n', pa_criteria_text[:kw_match.start()]))
+                        start = prev_heading[-1].start() if prev_heading else max(0, kw_match.start() - 200)
+                        section = pa_criteria_text[start:end]
                     else:
-                        snippet = pa_criteria_text[:2000].strip()
+                        section = pa_criteria_text[:4000]
 
-                    def clean_pa_snippet(text):
-                        # Remove page header/footer lines
-                        text = re.sub(r'[A-Z0-9_]+\s+Updated\s+\d+/\d+\s+Page\s+\d+\s+of\s+\d+', '', text)
-                        # Add newlines before known section labels that run together
-                        for label in [
-                            'Products Affected', 'Criteria Details', 'Off-Label Uses', 'Off Label Uses',
-                            'Part B', 'Prerequisite', 'Exclusion', 'Other Criteria',
-                            'Age Restrictions', 'Age Restriction', 'Prescriber Restrictions',
-                            'Prescriber Restriction', 'Coverage Duration', 'Coverage\nDuration',
-                            'Authorization will', 'Indications', 'Required Medical',
-                            'Medical Information', 'Medical\nInformation',
-                        ]:
-                            text = re.sub(r'(?<!\n)(' + re.escape(label) + r')', r'\n\n\1', text)
-                        # Bullet points — add newline before •
-                        text = text.replace('•', '\n  •')
-                        # Collapse excess blank lines
-                        text = re.sub(r'\n{3,}', '\n\n', text)
-                        lines = [l.rstrip() for l in text.split('\n')]
-                        return '\n'.join(lines).strip()
+                    # Extract only the desired categories
+                    CATEGORIES = {
+                        'Exclusion Criteria':       [r'Exclusion\s*Criteria', r'ExclusionCriteria'],
+                        'Required Medical Info':     [r'Required\s*Medical\s*(?:Diagnosis|Information)', r'CriteriaRequired\s*Medical'],
+                        'Age Restrictions':          [r'Age\s*Restrictions?'],
+                        'Prescriber Restrictions':   [r'Prescriber\s*Restrictions?'],
+                        'Coverage Duration':         [r'Coverage\s*Duration', r'CoverageDuration', r'Authorization will be'],
+                        'Other Criteria':            [r'Other\s*Criteria', r'OtherCriteria'],
+                        'Off-Label Uses':            [r'Off[\s\-]?Label\s*Uses?'],
+                        'Part B Prerequisite':       [r'Part\s*B', r'Prerequisite'],
+                    }
 
-                    cleaned = clean_pa_snippet(snippet)
-                    snippet_html = cleaned.replace("&","&amp;").replace("<","&lt;").replace(">","&gt;").replace('"',"&quot;").replace("\n","<br>")
+                    def extract_categories(text, categories):
+                        # Normalize whitespace runs into single spaces for easier matching
+                        flat = re.sub(r'\s+', ' ', text)
+                        rows = []
+                        for label, patterns in categories.items():
+                            combined = '|'.join(f'(?:{p})' for p in patterns)
+                            m = re.search(combined, flat, re.IGNORECASE)
+                            if not m:
+                                continue
+                            # Grab text after label until next known label or end
+                            all_pats = '|'.join(
+                                p for plist in categories.values() for p in plist
+                            )
+                            after = flat[m.end():]
+                            next_m = re.search(all_pats, after, re.IGNORECASE)
+                            value = after[:next_m.start()].strip() if next_m else after[:500].strip()
+                            # Clean up value
+                            value = re.sub(r'\s{2,}', ' ', value).strip(' .:')
+                            if value and value.lower() not in ('no', 'none', ''):
+                                rows.append((label, value))
+                        return rows
+
+                    rows = extract_categories(section, CATEGORIES)
+
+                    if rows:
+                        rows_html = "".join(
+                            f'<tr>'
+                            f'<td style="padding:5px 10px 5px 0;font-weight:600;color:#734702;vertical-align:top;white-space:nowrap;font-size:0.78rem;">{lbl}</td>'
+                            f'<td style="padding:5px 0 5px 10px;color:#2a3a4a;font-size:0.8rem;line-height:1.6;">{val.replace("&","&amp;").replace("<","&lt;").replace(">","&gt;")}</td>'
+                            f'</tr>'
+                            for lbl, val in rows
+                        )
+                        snippet_html = (
+                            f'<table style="width:100%;border-collapse:collapse;">{rows_html}</table>'
+                            f'<div style="margin-top:10px;padding-top:8px;border-top:1px solid #f0e0c0;">'
+                            f'<a href="{pa_criteria_url}" target="_blank" style="color:#416CA6;font-size:0.75rem;">View full PDF ↗</a></div>'
+                        )
+                    else:
+                        snippet_html = (
+                            f'<div style="color:#888;font-size:0.8rem;">No structured criteria found for this drug.</div>'
+                            f'<div style="margin-top:8px;"><a href="{pa_criteria_url}" target="_blank" style="color:#416CA6;font-size:0.75rem;">View full PDF ↗</a></div>'
+                        )
+
                     pa_criteria_link = (
                         f'<details style="display:inline;margin-left:10px;">'
                         f'<summary style="display:inline;font-size:0.75rem;color:#856404;font-weight:500;cursor:pointer;border-bottom:1px dashed #856404;">PA Criteria ▾</summary>'
-                        f'<div style="margin-top:8px;padding:14px 16px;background:#fffbf0;border-left:3px solid #e8913a;border-radius:0 6px 6px 0;font-size:0.82rem;line-height:1.8;color:#2a3a4a;max-height:350px;overflow-y:auto;">'
+                        f'<div style="margin-top:8px;padding:14px 16px;background:#fffbf0;border-left:3px solid #e8913a;border-radius:0 6px 6px 0;max-height:380px;overflow-y:auto;">'
                         f'{snippet_html}'
-                        f'<div style="margin-top:10px;padding-top:8px;border-top:1px solid #f0e0c0;">'
-                        f'<a href="{pa_criteria_url}" target="_blank" style="color:#416CA6;font-size:0.75rem;">View full PDF ↗</a></div>'
                         f'</div></details>'
                     )
                 else:
