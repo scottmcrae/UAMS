@@ -786,7 +786,7 @@ if go and keyword.strip():
                     )
 
                     pa_criteria_link = (
-                        f'<details style="display:inline;margin-left:15px;">'
+                        f'<details style="display:inline-block;margin-left:15px;vertical-align:middle;">'
                         f'<summary style="display:inline;font-size:0.88rem;color:#856404;font-weight:700;cursor:pointer;text-decoration:underline;">PA Criteria ▾</summary>'
                         f'<div style="margin-top:8px;padding:14px 16px;background:#fffbf0;border-left:3px solid #e8913a;border-radius:0 6px 6px 0;max-height:380px;overflow-y:auto;">'
                         f'{snippet_html}'
