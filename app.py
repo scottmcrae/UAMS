@@ -553,6 +553,9 @@ def format_freetext_html(text):
         elif re.match(r'^•\s', s) or leading >= 4:             # indented bullet / sub-item
             indent = 40 + min(leading, 12) * 4
             parts.append(f'<div style="margin:2px 0 1px {indent}px;">{esc}</div>')
+        elif re.match(r'^\uf0a7', s) or re.match(r'^\u25aa', s):  # Wingdings sub-bullet
+            clean_esc = _html.escape(s[1:].strip())
+            parts.append(f'<div style="margin:2px 0 1px 48px;">◦ {clean_esc}</div>')
         elif s in ('-AND-', '-OR-', 'AND', 'OR'):              # connectors
             parts.append(f'<div style="margin:3px 0 3px 48px;color:#856404;font-weight:500;">{esc}</div>')
         elif re.match(r'^(Coverage Criteria|Continuation of Therapy|References|Background)', s, re.IGNORECASE):
