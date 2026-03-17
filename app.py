@@ -1066,7 +1066,12 @@ if go and keyword.strip():
                             ))
                             _fda_m = _all_fda[0] if _all_fda else None
                             _cov_m = re.search(r'(?:^|\n)Coverage Criteria', _text, re.IGNORECASE)
-                            if _fda_m:
+                            # Always prefer starting at "Indications\nFDA-approved Indications" section header
+                            _ind_header_m = re.search(r'(?:^|\n)Indications\s*\nFDA-approved Indications', _text, re.IGNORECASE)
+                            if _ind_header_m:
+                                _start = _ind_header_m.start()
+                                _end = min(len(_text), (_cov_m.start() + 4000) if _cov_m else (_start + 6000))
+                            elif _fda_m:
                                 # If multiple matches, start at "FDA-approved Indications" line directly
                                 if len(_all_fda) > 1:
                                     _start = _text.index('FDA-approved Indications', _fda_m.start())
