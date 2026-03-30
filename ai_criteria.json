@@ -1,0 +1,1041 @@
+{
+  "ABILIFY_V2": {
+    "SchemaVersion": "DANIEL_SCHEMA_V2",
+    "Metadata": {
+      "CreatedDate": "2026-03-30",
+      "LastValidatedDate": "2026-03-30",
+      "ValidatorVersion": "DANIEL_VALIDATOR_V3",
+      "TherapeuticArea": "Psychiatry"
+    },
+    "DrugName": "ABILIFY",
+    "Generic": "aripiprazole",
+    "Class": "Atypical antipsychotic (dopamine D2 partial agonist)",
+    "Section1_ClinicalSummary": {
+      "Indications": [
+        "Schizophrenia in adults and adolescents ≥ 13 years",
+        "Bipolar I disorder (acute manic or mixed episodes) in adults and pediatric patients ≥ 10 years",
+        "Adjunctive treatment of major depressive disorder (MDD) in adults",
+        "Irritability associated with autistic disorder (ages 6–17 years)",
+        "Tourette's disorder (ages 6–18 years)"
+      ],
+      "PACriteria": [
+        "ICD-10 diagnosis consistent with indication (e.g., F20.x schizophrenia, F31.x bipolar I disorder, F33.x major depressive disorder)",
+        "Documented moderate-to-severe symptom burden (e.g., PANSS score elevation, YMRS ≥ 20, or PHQ-9 ≥ 10 for MDD)",
+        "Failure of ≥ 6 weeks of first-line therapy (e.g., SSRI/SNRI for MDD, mood stabilizer for bipolar disorder)",
+        "For schizophrenia: inadequate response or intolerance to ≥ 1 antipsychotic",
+        "For adjunct MDD: inadequate response to ≥ 1 antidepressant at therapeutic dose",
+        "Baseline metabolic panel and weight documented",
+        "Assessment for extrapyramidal symptoms (EPS) risk",
+        "No active untreated psychosis-related substance intoxication"
+      ],
+      "StepTherapyProtocols": {
+        "FirstLine": [
+          "Schizophrenia: initiate atypical antipsychotic therapy",
+          "Bipolar disorder: mood stabilizer (e.g., lithium or valproate)",
+          "MDD: SSRI or SNRI for ≥ 6 weeks at therapeutic dose"
+        ],
+        "SecondLine": [
+          "Add or switch to aripiprazole after inadequate response",
+          "Typical starting dose 10–15 mg/day (schizophrenia), 2–5 mg/day (adjunct MDD)"
+        ]
+      },
+      "CoverageConsiderations": {
+        "Medicaid": [
+          "Requires documented failure of first-line pharmacotherapy",
+          "Quantity limits based on FDA dosing"
+        ],
+        "MedicarePartD": [
+          "Step therapy with generic antidepressants or mood stabilizers",
+          "Formulary tier may vary"
+        ],
+        "CommercialPlans": [
+          "Prior authorization for adjunctive MDD indication common",
+          "Documentation of symptom scale scores often required"
+        ]
+      },
+      "ReauthorizationRequirements": [
+        "Improvement in symptom severity (e.g., ≥ 20% reduction in PANSS or ≥ 5-point reduction in PHQ-9 within 6–12 weeks)",
+        "Stabilization of mood episodes (YMRS reduction ≥ 50% for bipolar mania)",
+        "No significant metabolic adverse effects (e.g., weight gain > 7% baseline)",
+        "Continued psychiatric follow-up documentation"
+      ],
+      "GuidelineReferences": {
+        "1": {
+          "Title": "FDA Label – Abilify (aripiprazole)",
+          "URL": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2023/021436s052lbl.pdf"
+        },
+        "2": {
+          "Title": "APA Practice Guideline for the Treatment of Patients with Schizophrenia",
+          "URL": "https://psychiatryonline.org/doi/book/10.1176/appi.books.9780890424841"
+        }
+      }
+    },
+    "Section2_AppealReadyNarrative": "This patient has a confirmed psychiatric diagnosis (e.g., F20.x schizophrenia or F33.x major depressive disorder) with persistent moderate-to-severe symptoms despite ≥ 6 weeks of first-line pharmacotherapy at therapeutic dosing. Objective symptom scales (e.g., PANSS, PHQ-9 ≥ 10) demonstrate clinically significant impairment. Per APA practice guidelines, escalation to or augmentation with an atypical antipsychotic such as aripiprazole is appropriate after inadequate response to initial therapy. Reauthorization will require ≥ 20% symptom reduction within 6–12 weeks and monitoring for metabolic effects. Delaying appropriate pharmacologic escalation increases risk of relapse, hospitalization, suicidality, and functional decline. Abilify is medically necessary and consistent with FDA-approved indications and guideline-directed care."
+  },
+  "BENLYSTA_V2": {
+    "SchemaVersion": "DANIEL_SCHEMA_V2",
+    "Metadata": {
+      "CreatedDate": "2026-03-30",
+      "LastValidatedDate": "2026-03-30",
+      "ValidatorVersion": "DANIEL_VALIDATOR_V3",
+      "TherapeuticArea": "Rheumatology"
+    },
+    "DrugName": "BENLYSTA",
+    "Generic": "belimumab",
+    "Class": "B-lymphocyte stimulator (BLyS) inhibitor (monoclonal antibody; IV or SC)",
+    "Section1_ClinicalSummary": {
+      "Indications": [
+        "Active systemic lupus erythematosus (SLE) in patients ≥ 5 years receiving standard therapy",
+        "Active lupus nephritis in patients ≥ 5 years receiving standard therapy"
+      ],
+      "PACriteria": [
+        "ICD-10 SLE diagnosis (M32.x)",
+        "Fulfillment of 2019 ACR/EULAR classification criteria",
+        "Positive ANA and/or anti-dsDNA antibodies",
+        "SLEDAI ≥ 6 or documented moderate-to-severe disease activity",
+        "Evidence of active serologic disease (elevated anti-dsDNA and/or low C3/C4)",
+        "Persistent disease activity despite hydroxychloroquine unless contraindicated",
+        "Inability to taper prednisone to ≤ 7.5 mg/day without flare",
+        "Prior trial of conventional immunosuppressant (e.g., MMF 2–3 g/day ≥ 12 weeks or AZA 2–3 mg/kg/day ≥ 12 weeks)",
+        "For lupus nephritis: UPCR ≥ 1 g/g or biopsy-proven Class III/IV/V",
+        "Partial or inadequate renal response after 6–12 months of induction therapy"
+      ],
+      "StepTherapyProtocols": {
+        "SLEStandardTherapy": [
+          "Hydroxychloroquine ≤ 5 mg/kg/day long-term goal",
+          "Glucocorticoid taper attempt to ≤ 5–7.5 mg/day within 6 months"
+        ],
+        "ConventionalImmunosuppressants": [
+          "Mycophenolate mofetil 2–3 g/day for ≥ 12 weeks",
+          "Azathioprine 2–3 mg/kg/day for ≥ 12 weeks",
+          "Methotrexate if arthritis-dominant disease",
+          "Cyclophosphamide for organ-threatening disease"
+        ],
+        "LupusNephritisProtocol": [
+          "Glucocorticoids plus MPAA 2–3 g/day",
+          "Escalate if partial renal response not achieved by 6–12 months"
+        ]
+      },
+      "CoverageConsiderations": {
+        "Medicaid": [
+          "Requires failure of ≥ 1 immunosuppressant",
+          "Documentation of steroid dependence"
+        ],
+        "MedicarePartD": [
+          "Objective SLEDAI documentation required",
+          "Reauthorization based on ≥ 4-point SLEDAI reduction"
+        ],
+        "CommercialPlans": [
+          "Trial of MMF or AZA typically required",
+          "Autoantibody-positive restriction common"
+        ]
+      },
+      "ReauthorizationRequirements": [
+        "≥ 4-point reduction in SLEDAI within 6 months",
+        "Reduction in flare frequency",
+        "Steroid taper achieved to ≤ 7.5 mg/day",
+        "For lupus nephritis: ≥ 30–50% reduction in proteinuria with stable eGFR"
+      ],
+      "GuidelineReferences": {
+        "1": {
+          "Title": "FDA Label – Benlysta (belimumab)",
+          "URL": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2023/125370s078lbl.pdf"
+        },
+        "2": {
+          "Title": "2025 American College of Rheumatology Guideline for the Treatment of Systemic Lupus Erythematosus",
+          "URL": "https://acrjournals.onlinelibrary.wiley.com/doi/10.1002/art.43009"
+        },
+        "3": {
+          "Title": "2019 Update of the EULAR Recommendations for the Management of Systemic Lupus Erythematosus",
+          "URL": "https://ard.bmj.com/content/78/6/736"
+        }
+      }
+    },
+    "Section2_AppealReadyNarrative": "This patient has confirmed systemic lupus erythematosus (ICD-10 M32.x) with persistent moderate-to-severe disease activity (SLEDAI ≥ 6), active serologies (elevated anti-dsDNA and/or low complement), and steroid dependence despite optimized hydroxychloroquine and ≥ 12 weeks of conventional immunosuppressive therapy. Per the 2025 American College of Rheumatology guideline and updated EULAR recommendations, belimumab is appropriate in patients with inadequate response to standard therapy. For lupus nephritis, escalation is supported when partial renal response is not achieved after 6–12 months of induction. Reauthorization will require ≥ 4-point SLEDAI improvement and objective reduction in proteinuria where applicable. Delaying biologic escalation increases risk of organ damage, flare frequency, and glucocorticoid-related morbidity. Belimumab is medically necessary and consistent with FDA-approved indications and contemporary rheumatology guidelines."
+  },
+  "CPAP_V2": {
+    "SchemaVersion": "DANIEL_SCHEMA_V2",
+    "Metadata": {
+      "CreatedDate": "2026-03-30",
+      "LastValidatedDate": "2026-03-30",
+      "ValidatorVersion": "DANIEL_VALIDATOR_V3",
+      "TherapeuticArea": "Pulmonology / Sleep Medicine"
+    },
+    "DrugName": "CPAP",
+    "Generic": "Continuous Positive Airway Pressure device",
+    "Class": "Durable Medical Equipment (DME) – Positive Airway Pressure Therapy",
+    "Section1_ClinicalSummary": {
+      "Indications": [
+        "Obstructive sleep apnea (OSA) with apnea-hypopnea index (AHI) ≥ 15 events/hour",
+        "OSA with AHI 5–14 events/hour with symptoms (e.g., excessive daytime sleepiness) or comorbidities (e.g., hypertension, CAD, stroke)"
+      ],
+      "PACriteria": [
+        "ICD-10 diagnosis of obstructive sleep apnea (G47.33)",
+        "Documented polysomnography or home sleep study",
+        "AHI ≥ 15 events/hour OR AHI 5–14 with qualifying symptoms/comorbidities",
+        "Baseline Epworth Sleepiness Scale documented when applicable",
+        "Face-to-face clinical evaluation prior to testing",
+        "No central sleep apnea predominance unless using adaptive PAP device",
+        "Documentation of CPAP titration study or auto-PAP prescription parameters"
+      ],
+      "StepTherapyProtocols": {
+        "InitialEvaluation": [
+          "Comprehensive sleep evaluation and documentation of symptoms",
+          "Polysomnography or home sleep study confirming OSA"
+        ],
+        "TreatmentInitiation": [
+          "CPAP titration to eliminate apneas/hypopneas",
+          "Typical pressure range 5–20 cm H₂O depending on titration results"
+        ]
+      },
+      "CoverageConsiderations": {
+        "Medicaid": [
+          "Requires sleep study documentation",
+          "AHI thresholds must meet medical necessity criteria"
+        ],
+        "MedicarePartD": [
+          "Initial 12-week trial period",
+          "Compliance defined as ≥ 4 hours/night on ≥ 70% of nights"
+        ],
+        "CommercialPlans": [
+          "Similar AHI and compliance documentation required",
+          "DME supplier network restrictions may apply"
+        ]
+      },
+      "ReauthorizationRequirements": [
+        "Objective usage ≥ 4 hours/night on ≥ 70% of nights during initial 90 days",
+        "Documentation of symptom improvement (e.g., reduced daytime sleepiness)",
+        "Follow-up visit within 31–90 days documenting benefit"
+      ],
+      "GuidelineReferences": {
+        "1": {
+          "Title": "Medicare National Coverage Determination for CPAP Therapy",
+          "URL": "https://www.cms.gov/medicare-coverage-database/details/ncd-details.aspx?NCDId=226"
+        },
+        "2": {
+          "Title": "American Academy of Sleep Medicine Clinical Practice Guideline for OSA",
+          "URL": "https://aasm.org/clinical-resources/practice-standards/practice-guidelines/"
+        }
+      }
+    },
+    "Section2_AppealReadyNarrative": "This patient has documented obstructive sleep apnea (ICD-10 G47.33) confirmed by sleep study demonstrating an apnea-hypopnea index (AHI) ≥ 15 events/hour, meeting criteria for CPAP therapy. The patient also reports excessive daytime sleepiness with documented Epworth Sleepiness Scale elevation. Per Medicare National Coverage Determination and American Academy of Sleep Medicine guidelines, CPAP is medically necessary for OSA meeting AHI thresholds. Reauthorization requires objective adherence defined as ≥ 4 hours/night on ≥ 70% of nights within the first 90 days and documented symptomatic improvement. Untreated OSA increases risk of cardiovascular disease, stroke, and metabolic complications. CPAP therapy is medically necessary and consistent with national coverage criteria."
+  },
+  "DEXCOM_V2": {
+    "SchemaVersion": "DANIEL_SCHEMA_V2",
+    "Metadata": {
+      "CreatedDate": "2026-03-30",
+      "LastValidatedDate": "2026-03-30",
+      "ValidatorVersion": "DANIEL_VALIDATOR_V3",
+      "TherapeuticArea": "Endocrinology / Diabetes Technology"
+    },
+    "DrugName": "DEXCOM",
+    "Generic": "Continuous Glucose Monitoring System (e.g., Dexcom G6/G7)",
+    "Class": "Continuous Glucose Monitoring Device (Durable Medical Equipment)",
+    "Section1_ClinicalSummary": {
+      "Indications": [
+        "Continuous glucose monitoring in patients with diabetes mellitus requiring intensive insulin therapy",
+        "Adjunct to blood glucose monitoring for improved glycemic control"
+      ],
+      "PACriteria": [
+        "ICD-10 diagnosis of Type 1 diabetes (E10.x) or Type 2 diabetes (E11.x)",
+        "Use of multiple daily insulin injections (≥ 3 per day) or insulin pump therapy",
+        "Documented self-monitoring of blood glucose ≥ 4 times/day prior to CGM initiation (if required by payer)",
+        "Recent A1C ≥ 7.0% OR documented history of hypoglycemia (< 70 mg/dL)",
+        "Documented episodes of hypoglycemia unawareness or nocturnal hypoglycemia",
+        "Provider evaluation and prescription for CGM",
+        "Patient/caregiver training documented"
+      ],
+      "StepTherapyProtocols": {
+        "BaselineManagement": [
+          "Optimized insulin regimen (basal-bolus or pump therapy)",
+          "Structured glucose monitoring with fingerstick SMBG"
+        ],
+        "TechnologyEscalation": [
+          "Initiate CGM when glycemic targets not achieved or hypoglycemia risk present",
+          "Sensor replacement every 10 days (G6) or per device specifications"
+        ]
+      },
+      "CoverageConsiderations": {
+        "Medicaid": [
+          "Requires documentation of insulin regimen",
+          "A1C or hypoglycemia criteria often required"
+        ],
+        "MedicarePartD": [
+          "Requires insulin-treated diabetes",
+          "Face-to-face visit within 6 months prior to ordering",
+          "Continued use contingent on documented adherence"
+        ],
+        "CommercialPlans": [
+          "Prior authorization required",
+          "Hypoglycemia documentation or uncontrolled A1C often required"
+        ]
+      },
+      "ReauthorizationRequirements": [
+        "Continued insulin therapy",
+        "Demonstrated adherence to CGM use (≥ 70% active sensor time)",
+        "Improvement in glycemic metrics (e.g., increased Time in Range ≥ 10%)",
+        "Reduction in hypoglycemia episodes (< 70 mg/dL)"
+      ],
+      "GuidelineReferences": {
+        "1": {
+          "Title": "FDA Device Labeling – Dexcom CGM Systems",
+          "URL": "https://www.accessdata.fda.gov/cdrh_docs/pdf17/P170041S032B.pdf"
+        },
+        "2": {
+          "Title": "American Diabetes Association Standards of Care in Diabetes – 2024",
+          "URL": "https://diabetesjournals.org/care/issue/47/Supplement_1"
+        }
+      }
+    },
+    "Section2_AppealReadyNarrative": "This patient has insulin-treated diabetes mellitus (ICD-10 E10.x/E11.x) with suboptimal glycemic control (A1C ≥ 7.0%) and documented hypoglycemia (< 70 mg/dL). Despite optimized basal-bolus therapy and structured self-monitoring, glycemic variability persists. Continuous glucose monitoring is recommended by the American Diabetes Association for patients on intensive insulin regimens to improve Time in Range and reduce hypoglycemia. Reauthorization will require ≥ 70% sensor adherence and documented improvement in glycemic metrics including ≥ 10% increase in Time in Range. Delaying CGM therapy increases risk of severe hypoglycemia and long-term microvascular complications. Dexcom CGM is medically necessary and consistent with FDA authorization and contemporary diabetes standards."
+  },
+  "ELIQUIS_V3": {
+    "SchemaVersion": "DANIEL_SCHEMA_V3",
+    "Metadata": {
+      "CreatedDate": "March 30, 2026",
+      "LastValidatedDate": "March 30, 2026",
+      "ValidatorVersion": "DANIEL_VALIDATOR_V3",
+      "TherapeuticArea": "Cardiology / Hematology"
+    },
+    "DrugName": "ELIQUIS",
+    "Generic": "apixaban",
+    "Class": "Direct factor Xa inhibitor (DOAC)",
+    "Section1_ClinicalSummary": {
+      "Indications": [
+        "Stroke prevention in nonvalvular atrial fibrillation (NVAF)",
+        "Treatment of deep vein thrombosis (DVT) and pulmonary embolism (PE)",
+        "Reduction in risk of recurrent DVT and PE",
+        "Prophylaxis of DVT following hip or knee replacement surgery"
+      ],
+      "PACriteria": [
+        "ICD-10: I48.x (NVAF), I82.x (DVT), I26.x (PE), Z96.641/Z96.651 (hip/knee replacement)",
+        "For NVAF: CHA2DS2-VASc score ≥ 2 (men) or ≥ 3 (women)",
+        "No active pathological bleeding",
+        "Baseline renal function (CrCl) ≥ 15 mL/min documented within 3 months",
+        "Not indicated for mechanical heart valves or moderate-to-severe mitral stenosis",
+        "Dose reduction criteria met if ≥ 2 of the following: age ≥ 80 years, body weight ≤ 60 kg, serum creatinine ≥ 1.5 mg/dL",
+        "No concomitant strong dual CYP3A4 and P-gp inhibitors unless dose adjusted",
+        "No history of hypersensitivity to apixaban"
+      ],
+      "StepTherapyProtocols": {
+        "NVAF": [
+          "Calculate CHA2DS2-VASc score",
+          "If CHA2DS2-VASc ≥ 2 (men) or ≥ 3 (women) and no contraindication, initiate apixaban",
+          "Standard dose 5 mg twice daily",
+          "Reduce to 2.5 mg twice daily if ≥ 2 dose-reduction criteria met",
+          "Reassess renal function every 6–12 months"
+        ],
+        "DVT_PE_Treatment": [
+          "Initiate 10 mg twice daily for 7 days",
+          "Then 5 mg twice daily thereafter",
+          "Reassess bleeding risk and adherence at 3 months"
+        ],
+        "Extended_VTE_Prevention": [
+          "After ≥ 6 months of therapy, reduce to 2.5 mg twice daily for secondary prevention"
+        ],
+        "PostOp_Prophylaxis": [
+          "Initiate 2.5 mg twice daily 12–24 hours after surgery once hemostasis achieved",
+          "Continue for 35 days (hip) or 12 days (knee)"
+        ]
+      },
+      "CoverageConsiderations": {
+        "Medicaid": [
+          "Requires diagnosis confirmation and renal function documentation",
+          "May require documentation of warfarin intolerance or clinical rationale for DOAC"
+        ],
+        "MedicarePartD": [
+          "Covered for FDA indications with renal documentation",
+          "Tier placement may require prior authorization"
+        ],
+        "CommercialPlans": [
+          "Often preferred DOAC for NVAF and VTE indications",
+          "Requires documentation of CHA2DS2-VASc score and bleeding risk assessment"
+        ]
+      },
+      "ReauthorizationRequirements": [
+        "For NVAF: continued CHA2DS2-VASc indication and no major bleeding at 6–12 months",
+        "For VTE: reassessment of recurrence risk at 3–6 months",
+        "Renal function monitoring every 6–12 months",
+        "Documented adherence to prescribed twice-daily regimen"
+      ],
+      "GuidelineReferences": {
+        "1": {
+          "Title": "FDA Prescribing Information – Eliquis (apixaban)",
+          "URL": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2023/202155s035lbl.pdf"
+        },
+        "2": {
+          "Title": "CHEST Guideline and Expert Panel Report: Antithrombotic Therapy for VTE Disease (2021)",
+          "URL": "https://journal.chestnet.org/article/S0012-3692(21)00110-2/fulltext"
+        },
+        "3": {
+          "Title": "AHA/ACC/HRS Guideline for the Management of Patients With Atrial Fibrillation",
+          "URL": "https://www.ahajournals.org/doi/10.1161/CIR.0000000000000694"
+        }
+      }
+    },
+    "Section2_AppealReadyNarrative": "This patient meets FDA-approved criteria for apixaban therapy. For NVAF, the CHA2DS2-VASc score is ≥ 2 (men) or ≥ 3 (women), indicating anticoagulation to reduce stroke risk. Apixaban is guideline-preferred over warfarin due to lower intracranial hemorrhage risk and predictable pharmacokinetics. For DVT/PE, apixaban provides evidence-based oral therapy with defined dosing transition (10 mg twice daily for 7 days followed by 5 mg twice daily). Delaying anticoagulation increases risk of thromboembolism and mortality. Apixaban is medically necessary and consistent with FDA labeling and contemporary guidelines."
+  },
+  "FARXIGA_V2": {
+    "SchemaVersion": "DANIEL_SCHEMA_V2",
+    "Metadata": {
+      "CreatedDate": "2026-03-30",
+      "LastValidatedDate": "2026-03-30",
+      "ValidatorVersion": "DANIEL_VALIDATOR_V3",
+      "TherapeuticArea": "Endocrinology / Cardiology / Nephrology"
+    },
+    "DrugName": "FARXIGA",
+    "Generic": "dapagliflozin propanediol",
+    "Class": "SGLT2 inhibitor (sodium-glucose cotransporter-2 inhibitor)",
+    "Section1_ClinicalSummary": {
+      "Indications": [
+        "Type 2 diabetes mellitus in adults and pediatric patients ≥10 years for glycemic control as adjunct to diet and exercise",
+        "To reduce risk of hospitalization for heart failure in adults with T2DM and established cardiovascular disease or multiple CV risk factors",
+        "Heart failure (HFrEF or HFpEF) to reduce cardiovascular death and heart failure hospitalization",
+        "Chronic kidney disease (eGFR ≥25 mL/min/1.73 m²) to reduce sustained eGFR decline, ESKD, CV death, and HF hospitalization"
+      ],
+      "PACriteria": [
+        "ICD-10: E11.x (T2DM), I50.x (HF), or N18.x (CKD)",
+        "For T2DM: baseline A1C ≥7.0% despite ≥3 months of metformin unless contraindicated",
+        "For HF: documented NYHA class II–IV with LVEF ≤40% (HFrEF) OR LVEF >40% (HFpEF) with elevated natriuretic peptides",
+        "For CKD: eGFR 25–75 mL/min/1.73 m² with UACR ≥200 mg/g despite ACEi/ARB therapy",
+        "Not for type 1 diabetes due to DKA risk",
+        "No history of serious hypersensitivity to dapagliflozin",
+        "Renal function assessed prior to initiation",
+        "Volume status assessed and corrected before initiation"
+      ],
+      "StepTherapyProtocols": {
+        "Type2Diabetes": [
+          "Lifestyle modification + metformin titrated to maximally tolerated dose",
+          "Add SGLT2 inhibitor when A1C remains ≥7.0% after ≥3 months"
+        ],
+        "HeartFailure": [
+          "Guideline-directed medical therapy (ACEi/ARB/ARNI + beta blocker + MRA as indicated)",
+          "Add dapagliflozin 10 mg once daily regardless of diabetes status"
+        ],
+        "ChronicKidneyDisease": [
+          "ACE inhibitor or ARB at maximally tolerated dose",
+          "Add dapagliflozin 10 mg daily if eGFR ≥25 mL/min/1.73 m²"
+        ]
+      },
+      "CoverageConsiderations": {
+        "Medicaid": [
+          "Requires diagnosis-specific documentation (A1C, EF %, or eGFR/UACR)",
+          "Metformin trial required for diabetes unless contraindicated"
+        ],
+        "MedicarePartD": [
+          "Heart failure and CKD indications generally covered with documentation",
+          "May require confirmation of guideline-directed therapy"
+        ],
+        "CommercialPlans": [
+          "Prior authorization common for diabetes indication",
+          "Often preferred for HF or CKD due to guideline endorsement"
+        ]
+      },
+      "ReauthorizationRequirements": [
+        "For diabetes: ≥0.5–1.0% A1C reduction within 3–6 months",
+        "For HF: reduced HF hospitalization or stable NYHA class after 6 months",
+        "For CKD: stabilization or slower decline in eGFR at 6–12 months",
+        "Continued adherence and absence of DKA or severe adverse effects"
+      ],
+      "GuidelineReferences": {
+        "1": {
+          "Title": "FDA Prescribing Information – Farxiga (dapagliflozin)",
+          "URL": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2024/202293s028lbl.pdf"
+        },
+        "2": {
+          "Title": "ADA Standards of Care in Diabetes – 2024",
+          "URL": "https://diabetesjournals.org/care/issue/47/Supplement_1"
+        },
+        "3": {
+          "Title": "KDIGO 2022 Clinical Practice Guideline for Diabetes Management in CKD",
+          "URL": "https://www.kidney-international.org/article/S0085-2538(22)00811-1/fulltext"
+        },
+        "4": {
+          "Title": "2022 AHA/ACC/HFSA Guideline for the Management of Heart Failure",
+          "URL": "https://www.ahajournals.org/doi/10.1161/CIR.0000000000001063"
+        }
+      }
+    },
+    "Section2_AppealReadyNarrative": "This patient meets criteria for dapagliflozin therapy under FDA-approved indications. In Type 2 diabetes mellitus, the patient demonstrates A1C ≥7.0% despite optimized metformin therapy. Per ADA Standards of Care 2024, SGLT2 inhibitors are recommended for patients with T2DM and cardiovascular or renal risk. In heart failure (HFrEF or HFpEF), dapagliflozin 10 mg daily reduces cardiovascular death and HF hospitalization independent of diabetes status per AHA/ACC/HFSA guidelines. In CKD with eGFR ≥25 mL/min/1.73 m² and albuminuria ≥200 mg/g, KDIGO 2022 recommends SGLT2 inhibitors to reduce progression to ESKD and CV events. Delaying initiation increases risk of heart failure hospitalization, progressive renal decline, and cardiovascular mortality. Farxiga is medically necessary and consistent with FDA labeling and contemporary multidisciplinary guidelines."
+  },
+  "HUMIRA_V2": {
+    "SchemaVersion": "DANIEL_SCHEMA_V2",
+    "Metadata": {
+      "CreatedDate": "2026-03-30",
+      "LastValidatedDate": "2026-03-30",
+      "ValidatorVersion": "DANIEL_VALIDATOR_V3",
+      "TherapeuticArea": "Rheumatology / Immunology"
+    },
+    "DrugName": "HUMIRA",
+    "Generic": "adalimumab",
+    "Class": "TNF-alpha inhibitor (monoclonal antibody)",
+    "Section1_ClinicalSummary": {
+      "Indications": [
+        "Moderate-to-severe rheumatoid arthritis in adults",
+        "Moderate-to-severe plaque psoriasis",
+        "Psoriatic arthritis",
+        "Ankylosing spondylitis",
+        "Crohn's disease and ulcerative colitis",
+        "Juvenile idiopathic arthritis"
+      ],
+      "PACriteria": [
+        "Confirmed diagnosis per ICD-10 code (e.g., M05.x for RA, L40.x for psoriasis, K50.x for Crohn's)",
+        "Moderate-to-severe disease activity (e.g., DAS28 > 3.2 for RA or BSA ≥ 10% for psoriasis)",
+        "Failure of ≥ 3 months of first-line therapy (e.g., methotrexate ≥ 15 mg/week for RA)",
+        "Inadequate response or intolerance to ≥ 1 conventional DMARD",
+        "For IBD: inadequate response to corticosteroids or immunomodulators",
+        "Baseline TB screening negative",
+        "Hepatitis B screening documented",
+        "No active serious infection"
+      ],
+      "StepTherapyProtocols": {
+        "FirstLine": [
+          "Methotrexate ≥ 15 mg/week for ≥ 12 weeks (RA)",
+          "Topical or systemic non-biologic therapy (psoriasis)",
+          "Corticosteroids or immunomodulators for IBD"
+        ],
+        "SecondLine": [
+          "Initiate TNF inhibitor after inadequate response",
+          "Humira dosing: 40 mg subcutaneously every other week (RA standard)"
+        ]
+      },
+      "CoverageConsiderations": {
+        "Medicaid": [
+          "Requires failure of conventional DMARD",
+          "TB screening documentation required"
+        ],
+        "MedicarePartD": [
+          "Step therapy with methotrexate common",
+          "Specialty pharmacy benefit"
+        ],
+        "CommercialPlans": [
+          "Biosimilar step therapy often required",
+          "Prior authorization with disease activity score documentation"
+        ]
+      },
+      "ReauthorizationRequirements": [
+        "Improvement in disease activity score (e.g., DAS28 decrease ≥ 1.2 within 3–6 months)",
+        "Reduction in BSA involvement for psoriasis ≥ 50%",
+        "For IBD: documented clinical remission or reduced flare frequency",
+        "No serious infection or adverse events"
+      ],
+      "GuidelineReferences": {
+        "1": {
+          "Title": "FDA Label – Humira (adalimumab)",
+          "URL": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2023/125057s421lbl.pdf"
+        },
+        "2": {
+          "Title": "American College of Rheumatology Guideline for the Treatment of Rheumatoid Arthritis",
+          "URL": "https://acrjournals.onlinelibrary.wiley.com/doi/10.1002/acr.24596"
+        }
+      }
+    },
+    "Section2_AppealReadyNarrative": "This patient has a confirmed inflammatory autoimmune condition with moderate-to-severe disease activity despite ≥ 12 weeks of first-line therapy (e.g., methotrexate ≥ 15 mg/week for rheumatoid arthritis). Disease activity remains elevated (e.g., DAS28 > 3.2), and the patient meets criteria for escalation to biologic therapy per American College of Rheumatology guidelines. Baseline TB and hepatitis screening have been completed and are negative. Humira is FDA-approved for this indication and medically necessary given inadequate response to conventional therapy. Reauthorization will require objective improvement including ≥ 1.2 reduction in DAS28 or ≥ 50% improvement in BSA involvement for psoriasis within 3–6 months. Delaying biologic escalation increases risk of joint damage, disability, and systemic complications."
+  },
+  "LTAC_ADMISSION": {
+    "SchemaVersion": "DANIEL_SCHEMA_V4",
+    "Metadata": {
+      "CreatedDate": "2026-03-30",
+      "LastValidatedDate": "2026-03-30",
+      "ValidatorVersion": "DANIEL_VALIDATOR_V4",
+      "TherapeuticArea": "Care Level Determination / Post-Acute Medicine",
+      "AccessTier": "LEVEL_OF_CARE_HIGH_SCRUTINY"
+    },
+    "DrugName": "LTAC_ADMISSION",
+    "Generic": "Long-Term Acute Care Hospital Level of Care",
+    "Class": "Facility-Based Advanced Post-Acute Care",
+    "Indications": [
+      "Medically complex patients requiring extended hospital-level care beyond traditional inpatient stay",
+      "Patients requiring prolonged mechanical ventilation",
+      "Patients requiring daily physician management and intensive nursing care"
+    ],
+    "PACriteria": [
+      "Ventilator dependence for 21 or more consecutive days despite 2 or more failed spontaneous breathing trials",
+      "Tracheostomy in place with active weaning protocol; FiO2 >= 40% or PEEP >= 5 cm H2O on most recent ABG",
+      "Daily arterial blood gases required to guide ventilator management",
+      "Recurrent sepsis or persistent leukocytosis despite at least 7 days of IV antibiotics without resolution",
+      "Hemodynamic instability requiring titratable IV vasopressors or antihypertensives unable to be discontinued",
+      "Acute renal failure requiring close daily electrolyte monitoring and potential renal replacement therapy",
+      "Complex total parenteral nutrition (TPN) requiring daily lab adjustment and physician oversight",
+      "Recurrent ICU-level transfers within the same hospitalization indicating inability to sustain lower acuity care",
+      "Stage III or Stage IV pressure injury requiring daily advanced wound care intervention",
+      "Documented failure of SNF placement attempt within the past 30 days noted in the medical record",
+      "Documented failure to meet IRF admission criteria, precluding inpatient rehabilitation facility transfer",
+      "Patient has required continuous IV medication management for longer than 14 days with no viable oral transition",
+      "Ongoing acute clinical instability preventing safe discharge to any setting below LTAC level for at least 21 days"
+    ],
+    "StepTherapyProtocols": {
+      "LevelOfCareEscalation": [
+        "Initial inpatient acute hospitalization with standard ICU or step-down management",
+        "Attempt stabilization and discharge planning at acute level within standard geometric mean length of stay",
+        "Evaluate for SNF or IRF placement; document outcome of evaluation in chart",
+        "If ongoing acute medical needs persist beyond 3 weeks despite stabilization efforts, escalate to LTAC"
+      ]
+    },
+    "CoverageConsiderations": {
+      "Medicaid": [
+        "Requires documentation of failed lower-level placement attempt prior to LTAC authorization",
+        "Daily physician management requirement must be evidenced by signed daily progress notes",
+        "Ventilator dependency criteria must be supported by current respiratory therapy records"
+      ],
+      "Medicare": [
+        "CMS LTAC qualifying stay requirements must be met including minimum 25-day average length of stay",
+        "Appropriate diagnosis-related group qualification required per CMS LTCH PPS guidelines",
+        "Daily physician documentation required to support continued medical necessity"
+      ],
+      "CommercialPlans": [
+        "Prior authorization mandatory before admission; retroactive authorizations rarely approved",
+        "Peer-to-peer review frequently required; attending physician should be available within 24 hours of request",
+        "Evidence of failure at lower level of care required; chart documentation must be submitted with PA request"
+      ]
+    },
+    "ReauthorizationRequirements": [
+      "Demonstrated measurable clinical improvement within 30 days of LTAC admission",
+      "Ongoing ventilator weaning progress documented by respiratory therapy at least every 72 hours",
+      "Reduction in IV medication complexity or vasopressor requirements over prior 14-day period",
+      "Active transition plan toward lower level of care with target discharge setting identified"
+    ],
+    "AppealNarrative": "This patient meets criteria for LTAC level of care due to persistent acute medical instability requiring daily physician management, prolonged mechanical ventilation beyond 21 days, and documented failure of transition to a lower level of care despite stabilization attempts spanning at least 3 weeks. Continued hospitalization at traditional inpatient level is no longer appropriate, and SNF or IRF settings cannot safely manage current clinical complexity. LTAC admission is medically necessary to provide specialized respiratory care, advanced wound management, and intensive interdisciplinary services with the goal of achieving sufficient stability for eventual transition to a lower acuity setting.",
+    "GuidelineReferences": {
+      "1": {
+        "Title": "CMS Long-Term Care Hospital (LTCH) Payment System Overview",
+        "URL": "https://www.cms.gov/Medicare/Medicare-Fee-for-Service-Payment/LongTermCareHospitalPPS"
+      },
+      "2": {
+        "Title": "American Thoracic Society - Prolonged Mechanical Ventilation Clinical Practice Guidelines",
+        "URL": "https://www.thoracic.org"
+      },
+      "3": {
+        "Title": "Society of Critical Care Medicine - Chronic Critical Illness Management",
+        "URL": "https://www.sccm.org"
+      }
+    }
+  },
+  "MOUNJARO_V2": {
+    "SchemaVersion": "DANIEL_SCHEMA_V2",
+    "Metadata": {
+      "CreatedDate": "2026-03-30",
+      "LastValidatedDate": "2026-03-30",
+      "ValidatorVersion": "DANIEL_VALIDATOR_V3",
+      "TherapeuticArea": "Endocrinology / Type 2 Diabetes"
+    },
+    "DrugName": "MOUNJARO",
+    "Generic": "tirzepatide",
+    "Class": "GLP-1/GIP dual incretin receptor agonist",
+    "Section1_ClinicalSummary": {
+      "Indications": [
+        "Adjunct to diet and exercise to improve glycemic control in adults with type 2 diabetes mellitus"
+      ],
+      "PACriteria": [
+        "ICD-10 diagnosis of Type 2 diabetes mellitus (E11.x)",
+        "Baseline A1C ≥ 7.0% despite lifestyle modification",
+        "Trial of metformin at maximally tolerated dose for ≥ 3 months unless contraindicated",
+        "If ASCVD, CKD, or HF present, documentation of comorbidity",
+        "Inadequate glycemic control after ≥ 3 months of oral therapy",
+        "No personal or family history of medullary thyroid carcinoma or MEN2",
+        "Baseline A1C documented within past 3 months",
+        "Baseline weight documented"
+      ],
+      "StepTherapyProtocols": {
+        "FirstLine": [
+          "Lifestyle modification (diet, exercise)",
+          "Metformin titrated to maximally tolerated dose"
+        ],
+        "SecondLine": [
+          "Addition of GLP-1 RA, dual incretin agonist, or SGLT2 inhibitor based on comorbidity profile",
+          "Initiate Mounjaro 2.5 mg weekly for 4 weeks, increase to 5 mg weekly; may titrate in 2.5 mg increments every 4 weeks to maximum 15 mg weekly"
+        ]
+      },
+      "CoverageConsiderations": {
+        "Medicaid": [
+          "Requires metformin trial unless contraindicated",
+          "A1C ≥ 7.0% documentation required"
+        ],
+        "MedicarePartD": [
+          "Step therapy with metformin",
+          "Quantity limits per 28-day supply"
+        ],
+        "CommercialPlans": [
+          "Prior authorization required",
+          "May require trial of alternative GLP-1 receptor agonist"
+        ]
+      },
+      "ReauthorizationRequirements": [
+        "A1C reduction ≥ 0.5–1.0% within 3–6 months",
+        "Continued use contingent on adherence",
+        "Weight reduction documentation if applicable"
+      ],
+      "GuidelineReferences": {
+        "1": {
+          "Title": "FDA Label – Mounjaro (tirzepatide)",
+          "URL": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2023/215866s014lbl.pdf"
+        },
+        "2": {
+          "Title": "American Diabetes Association Standards of Care in Diabetes – 2024",
+          "URL": "https://diabetesjournals.org/care/issue/47/Supplement_1"
+        }
+      }
+    },
+    "Section2_AppealReadyNarrative": "This patient has Type 2 diabetes mellitus (ICD-10 E11.x) with persistent hyperglycemia (A1C ≥ 7.0%) despite optimized metformin therapy and lifestyle modification for ≥ 3 months. Per ADA Standards of Care, escalation to a GLP-1 receptor agonist or dual incretin therapy is recommended when glycemic targets are not achieved. Mounjaro (tirzepatide) is FDA-approved for glycemic control in adults with T2DM and offers significant A1C reduction and weight benefit. Reauthorization will require ≥ 0.5–1.0% A1C reduction within 3–6 months. Delaying escalation increases risk of microvascular and macrovascular complications. Mounjaro is medically necessary and consistent with FDA-approved indications and evidence-based guidelines."
+  },
+  "OZEMPIC_V2": {
+    "SchemaVersion": "DANIEL_SCHEMA_V2",
+    "Metadata": {
+      "CreatedDate": "2026-03-30",
+      "LastValidatedDate": "2026-03-30",
+      "ValidatorVersion": "DANIEL_VALIDATOR_V3",
+      "TherapeuticArea": "Endocrinology"
+    },
+    "DrugName": "OZEMPIC",
+    "Generic": "semaglutide",
+    "Class": "GLP-1 receptor agonist",
+    "Section1_ClinicalSummary": {
+      "Indications": [
+        "Adjunct to diet and exercise to improve glycemic control in adults with type 2 diabetes mellitus¹",
+        "Reduction of major adverse cardiovascular events in adults with type 2 diabetes mellitus and established cardiovascular disease¹"
+      ],
+      "PACriteria": [
+        "ICD-10 diagnosis of type 2 diabetes mellitus (E11.x)",
+        "Age ≥18 years",
+        "Baseline A1C ≥7.0% unless contraindication to alternative agents",
+        "Documented trial of metformin at maximally tolerated dose for ≥3 months unless contraindicated",
+        "Inadequate glycemic control despite oral therapy (A1C above individualized target)",
+        "For cardiovascular indication: documented ASCVD (e.g., prior MI, stroke, PAD)",
+        "BMI ≥25 kg/m² (if weight reduction also targeted)",
+        "Failure, intolerance, or contraindication to at least one additional antihyperglycemic agent if required by payer"
+      ],
+      "StepTherapyProtocols": {
+        "FirstLine": [
+          "Lifestyle modification (diet, exercise)",
+          "Metformin titrated to maximally tolerated dose for ≥3 months"
+        ],
+        "SecondLine": [
+          "Addition of GLP-1 receptor agonist or SGLT2 inhibitor based on comorbidities",
+          "Consider insulin if A1C ≥10% or symptomatic hyperglycemia"
+        ]
+      },
+      "CoverageConsiderations": {
+        "Medicaid": [
+          "Requires metformin trial unless contraindicated",
+          "May require sulfonylurea or SGLT2 inhibitor step prior to GLP-1 approval"
+        ],
+        "MedicarePartD": [
+          "Step therapy with metformin typically required",
+          "Quantity limits per 28-day supply common"
+        ],
+        "CommercialPlans": [
+          "CV indication may require documentation of established ASCVD",
+          "May require prior failure of two oral agents"
+        ]
+      },
+      "ReauthorizationRequirements": [
+        "Reduction in A1C by ≥0.5–1.0% after 3–6 months",
+        "Demonstrated adherence to therapy",
+        "Weight reduction of ≥3–5% from baseline if obesity targeted",
+        "No severe adverse events requiring discontinuation"
+      ],
+      "GuidelineReferences": {
+        "1": {
+          "Title": "FDA Label – Ozempic (semaglutide)",
+          "URL": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2023/209637s020lbl.pdf"
+        },
+        "2": {
+          "Title": "American Diabetes Association Standards of Care in Diabetes – 2024",
+          "URL": "https://diabetesjournals.org/care/issue/47/Supplement_1"
+        }
+      }
+    },
+    "Section2_AppealReadyNarrative": "This patient has confirmed type 2 diabetes mellitus (ICD-10 E11.x) with persistent hyperglycemia despite optimized lifestyle modification and a ≥3-month trial of metformin at maximally tolerated dosing. Baseline A1C remains ≥7.0%, exceeding individualized glycemic targets. The patient also has established atherosclerotic cardiovascular disease, further increasing risk of major adverse cardiovascular events. Per the American Diabetes Association Standards of Care in Diabetes – 2024, GLP-1 receptor agonists such as semaglutide are recommended in patients with inadequate glycemic control and established ASCVD. Ozempic is FDA-approved both for glycemic improvement and cardiovascular risk reduction. Reauthorization will be based on objective improvement including ≥0.5–1.0% A1C reduction within 3–6 months and sustained adherence. Delaying escalation increases risk of microvascular and macrovascular complications. Ozempic is medically necessary and consistent with FDA-approved indications and current evidence-based guidelines."
+  },
+  "REPATHA_V2b": {
+    "SchemaVersion": "DANIEL_SCHEMA_V2",
+    "Metadata": {
+      "CreatedDate": "2026-03-30",
+      "LastValidatedDate": "2026-03-30",
+      "ValidatorVersion": "DANIEL_VALIDATOR_V3",
+      "TherapeuticArea": "Cardiology / Lipidology"
+    },
+    "DrugName": "REPATHA",
+    "Generic": "evolocumab",
+    "Class": "PCSK9 inhibitor",
+    "Section1_ClinicalSummary": {
+      "Indications": [
+        "Adjunct to diet and maximally tolerated statin therapy for adults with clinical atherosclerotic cardiovascular disease (ASCVD) who require additional lowering of LDL-C",
+        "Adjunct to diet and other LDL-lowering therapies for adults with primary hyperlipidemia, including heterozygous familial hypercholesterolemia (HeFH), to reduce LDL-C",
+        "Homozygous familial hypercholesterolemia (HoFH) as adjunct to other LDL-lowering therapies"
+      ],
+      "PACriteria": [
+        "ICD-10: E78.0 (pure hypercholesterolemia), E78.01 (familial hypercholesterolemia), I25.x (ASCVD)",
+        "Trial of high-intensity statin (e.g., atorvastatin 40–80 mg or rosuvastatin 20–40 mg) for ≥ 3 months unless contraindicated",
+        "Trial of ezetimibe for ≥ 3 months unless contraindicated",
+        "Persistent LDL-C ≥ 70 mg/dL despite ≥ 3 months of maximally tolerated statin ± ezetimibe",
+        "For HoFH: documented genetic or clinical diagnosis and inadequate LDL-C response to statin + ezetimibe + other LDL-lowering therapies",
+        "No history of serious hypersensitivity to evolocumab",
+        "Liver function and creatine kinase assessed prior to initiation"
+      ],
+      "StepTherapyProtocols": {
+        "ASCVD_or_HeFH": [
+          "Lifestyle modification and dietary counseling",
+          "Initiate high-intensity statin therapy (atorvastatin 40–80 mg or rosuvastatin 20–40 mg) for ≥ 3 months",
+          "Add ezetimibe if LDL-C remains ≥ 70 mg/dL after ≥ 3 months of statin",
+          "If LDL-C remains ≥ 70 mg/dL despite maximally tolerated statin ± ezetimibe for ≥ 3 months, escalate to PCSK9 inhibitor (evolocumab)"
+        ],
+        "HoFH": [
+          "Initiate statin and ezetimibe plus other LDL-lowering therapies (e.g., LDL apheresis) as appropriate",
+          "If LDL-C remains above individualized target after ≥ 3 months, add evolocumab"
+        ]
+      },
+      "CoverageConsiderations": {
+        "Medicaid": [
+          "Requires documentation of statin and ezetimibe trial with dates and doses",
+          "LDL-C values before and after therapy required"
+        ],
+        "MedicarePartD": [
+          "Covered for ASCVD, HeFH, HoFH with documentation of step therapy and LDL-C thresholds",
+          "Prior authorization required"
+        ],
+        "CommercialPlans": [
+          "Prior authorization common; must document statin and ezetimibe intolerance or failure",
+          "LDL-C ≥ 70 mg/dL documentation required"
+        ]
+      },
+      "ReauthorizationRequirements": [
+        "≥ 50% reduction in LDL-C within 3–6 months of initiation",
+        "Continued adherence to statin and ezetimibe unless contraindicated",
+        "No serious adverse effects or hypersensitivity"
+      ],
+      "GuidelineReferences": {
+        "1": {
+          "Title": "FDA Prescribing Information – Repatha (evolocumab)",
+          "URL": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2023/125522s253lbl.pdf"
+        },
+        "2": {
+          "Title": "2018 AHA/ACC Multisociety Guideline on the Management of Blood Cholesterol",
+          "URL": "https://www.ahajournals.org/doi/10.1161/CIR.0000000000000625"
+        }
+      }
+    },
+    "Section2_AppealReadyNarrative": "This patient meets criteria for evolocumab (Repatha) therapy under FDA-approved indications. For ASCVD or HeFH, the patient has persistent LDL-C ≥ 70 mg/dL despite ≥ 3 months of maximally tolerated high-intensity statin and ezetimibe therapy, consistent with the 2018 AHA/ACC cholesterol guidelines and FDA labeling. For HoFH, the patient has inadequate LDL-C response to statin, ezetimibe, and other LDL-lowering therapies. Delaying PCSK9 inhibitor initiation increases risk of recurrent cardiovascular events. Repatha is medically necessary and consistent with contemporary guidelines and payer policy."
+  },
+  "WEGOVY_V2": {
+    "SchemaVersion": "DANIEL_SCHEMA_V2",
+    "Metadata": {
+      "CreatedDate": "2026-03-30",
+      "LastValidatedDate": "2026-03-30",
+      "ValidatorVersion": "DANIEL_VALIDATOR_V3",
+      "TherapeuticArea": "Endocrinology"
+    },
+    "DrugName": "WEGOVY",
+    "Generic": "semaglutide",
+    "Class": "GLP-1 receptor agonist",
+    "Section1_ClinicalSummary": {
+      "Indications": [
+        "Chronic weight management in adults with obesity (BMI ≥ 30 kg/m²) or overweight (BMI ≥ 27 kg/m²) with at least one weight-related comorbidity",
+        "Weight reduction in adolescents ≥ 12 years with obesity (BMI ≥ 95th percentile for age and sex)"
+      ],
+      "PACriteria": [
+        "Age ≥ 12 years",
+        "BMI ≥ 30 kg/m² (obesity) or BMI ≥ 27 kg/m² (overweight) with ≥ 1 weight-related comorbidity",
+        "Documented trial of ≥ 3 months of lifestyle modification (diet, exercise, behavior) with inadequate weight loss",
+        "Failure, intolerance, or contraindication to alternative anti-obesity medications",
+        "Absence of personal/family history of medullary thyroid carcinoma or multiple endocrine neoplasia syndrome type 2",
+        "Not pregnant or breastfeeding",
+        "Baseline weight and BMI documented"
+      ],
+      "StepTherapyProtocols": {
+        "FirstLine": [
+          "Comprehensive lifestyle modification (diet, exercise, behavior) for ≥ 3 months",
+          "Consideration of alternative anti-obesity medications if lifestyle alone insufficient"
+        ],
+        "SecondLine": [
+          "Initiate Wegovy if lifestyle and alternative agents fail or are contraindicated",
+          "Titration: 0.25 mg weekly for 4 weeks, then 0.5 mg for 4 weeks, then 1.0 mg for 4 weeks, then 1.7 mg for 4 weeks, then 2.4 mg maintenance"
+        ]
+      },
+      "CoverageConsiderations": {
+        "Medicaid": [
+          "Prior authorization required",
+          "Documentation of BMI ≥ 30 kg/m² or ≥ 27 kg/m² with comorbidity",
+          "Failure of lifestyle modification and alternative agents"
+        ],
+        "MedicarePartD": [
+          "Prior authorization required",
+          "Similar BMI and lifestyle failure documentation"
+        ],
+        "CommercialPlans": [
+          "Prior authorization required",
+          "BMI documentation and lifestyle failure required"
+        ]
+      },
+      "ReauthorizationRequirements": [
+        "≥ 5% weight loss from baseline after 12 weeks on 2.4 mg",
+        "If < 5% loss, discontinue or consider alternative therapy",
+        "Ongoing adherence and tolerability assessment"
+      ],
+      "GuidelineReferences": {
+        "1": {
+          "Title": "FDA Label – Wegovy (semaglutide)",
+          "URL": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2023/209637s123lbl.pdf"
+        },
+        "2": {
+          "Title": "American Diabetes Association Standards of Care in Diabetes – 2024",
+          "URL": "https://diabetesjournals.org/care/issue/47/Supplement_1"
+        }
+      }
+    },
+    "Section2_AppealReadyNarrative": "This patient meets criteria for chronic weight management with Wegovy (semaglutide), a GLP-1 receptor agonist approved for obesity and overweight with weight-related comorbidities. The patient has documented obesity (BMI ≥ 30 kg/m²) or overweight (BMI ≥ 27 kg/m²) with comorbidity, and has failed ≥ 3 months of comprehensive lifestyle modification with inadequate weight loss. Alternative anti-obesity medications are contraindicated or not tolerated. Wegovy is FDA-approved and recommended by ADA for weight management in appropriate patients. Reauthorization will be based on ≥ 5% weight loss at 12 weeks; without this, therapy should be discontinued. Delaying escalation increases risk of obesity-related complications."
+  },
+  "XARELTO_V2": {
+    "SchemaVersion": "DANIEL_SCHEMA_V2",
+    "Metadata": {
+      "CreatedDate": "2026-03-30",
+      "LastValidatedDate": "2026-03-30",
+      "ValidatorVersion": "DANIEL_VALIDATOR_V3",
+      "TherapeuticArea": "Hematology / Cardiology / Surgery"
+    },
+    "DrugName": "XARELTO",
+    "Generic": "rivaroxaban",
+    "Class": "Direct factor Xa inhibitor (DOAC)",
+    "Section1_ClinicalSummary": {
+      "Indications": [
+        "Stroke prevention in nonvalvular atrial fibrillation (NVAF)",
+        "Treatment and secondary prevention of deep vein thrombosis (DVT) and pulmonary embolism (PE)",
+        "Prophylaxis of DVT/PE after hip or knee replacement surgery",
+        "Reduction of major cardiovascular events in patients with coronary artery disease (CAD) or peripheral artery disease (PAD)"
+      ],
+      "PACriteria": [
+        "ICD-10: I48.x (NVAF), I82.x (DVT), I26.x (PE), Z51.81 (post-hip/knee replacement), I25.x (CAD), I74.x (PAD)",
+        "Baseline renal function (CrCl) documented within 3 months",
+        "No active pathological bleeding",
+        "Not for use in patients with CrCl < 15 mL/min",
+        "No hypersensitivity to rivaroxaban",
+        "Pregnancy/lactation contraindicated",
+        "Use with caution in hepatic impairment (Child-Pugh B/C)"
+      ],
+      "StepTherapyProtocols": {
+        "StrokePrevention_NVAF": [
+          "Evaluate CHA2DS2-VASc and bleeding risk (HAS-BLED)",
+          "Select rivaroxaban 20 mg daily (15 mg if CrCl 15–50 mL/min) with evening meal",
+          "Ensure adherence and renal monitoring at 6–12 months"
+        ],
+        "DVT_PE_Treatment": [
+          "Initial: 15 mg twice daily for 21 days",
+          "Transition: 20 mg once daily thereafter",
+          "Monitor for bleeding and adherence at 3–6 months"
+        ],
+        "HipKneeProphylaxis": [
+          "Initiate 6–10 hours post-op once hemostasis is established",
+          "10 mg once daily for 35 days (hip) or 12 days (knee)",
+          "Assess wound healing and bleeding at discharge and 2–4 weeks"
+        ],
+        "CAD_PAD": [
+          "Add rivaroxaban 2.5 mg twice daily to aspirin (75–100 mg)",
+          "Monitor for bleeding and adherence at 3–6 months"
+        ]
+      },
+      "CoverageConsiderations": {
+        "Medicaid": [
+          "Requires diagnosis-specific documentation (AF, DVT/PE, post-op, CAD/PAD)",
+          "Prior authorization common for non-formulary use"
+        ],
+        "MedicarePartD": [
+          "Covered for FDA indications with documentation",
+          "May require confirmation of renal function and indication"
+        ],
+        "CommercialPlans": [
+          "Prior authorization common for non-formulary use",
+          "Often preferred for NVAF and VTE indications"
+        ]
+      },
+      "ReauthorizationRequirements": [
+        "For NVAF: continued adherence and no major bleeding at 6–12 months",
+        "For DVT/PE: recurrence or bleeding assessment at 3–6 months",
+        "For post-op prophylaxis: adherence and wound assessment at discharge and 2–4 weeks",
+        "For CAD/PAD: adherence and bleeding assessment at 3–6 months"
+      ],
+      "GuidelineReferences": {
+        "1": {
+          "Title": "FDA Prescribing Information – Xarelto (rivaroxaban)",
+          "URL": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2023/202439s042lbl.pdf"
+        },
+        "2": {
+          "Title": "CHEST Antithrombotic Therapy for VTE Disease – 2021",
+          "URL": "https://journal.chestnet.org/article/S0012-3692(21)00110-2/fulltext"
+        },
+        "3": {
+          "Title": "AHA/ACC/HFSA Guideline for the Management of Heart Failure – 2022",
+          "URL": "https://www.ahajournals.org/doi/10.1161/CIR.0000000000001063"
+        }
+      }
+    },
+    "Section2_AppealReadyNarrative": "This patient meets criteria for rivaroxaban therapy under FDA-approved indications. In nonvalvular atrial fibrillation, the patient has CHA2DS2-VASc ≥ 2 or additional risk factors warranting anticoagulation. Per AHA/ACC/HFSA and CHEST, DOACs such as rivaroxaban are first-line for stroke prevention in NVAF and for treatment of VTE. In DVT/PE, rivaroxaban provides a simple oral regimen with noninferior efficacy and similar or lower bleeding risk compared with warfarin. In post-hip/knee replacement, rivaroxaban is FDA-approved for VTE prophylaxis with documented efficacy. In CAD/PAD, rivaroxaban 2.5 mg twice daily with aspirin reduces major adverse cardiovascular events. Delaying initiation increases thromboembolic risk and may necessitate bridging or alternative anticoagulation. Rivaroxaban is medically necessary and consistent with FDA labeling and contemporary guidelines."
+  },
+  "ZEPBOUND_V2": {
+    "SchemaVersion": "DANIEL_SCHEMA_V2",
+    "Metadata": {
+      "CreatedDate": "2026-03-30",
+      "LastValidatedDate": "2026-03-30",
+      "ValidatorVersion": "DANIEL_VALIDATOR_V3",
+      "TherapeuticArea": "Endocrinology / Obesity"
+    },
+    "DrugName": "ZEPBOUND",
+    "Generic": "tirzepatide",
+    "Class": "GLP-1/GIP dual agonist",
+    "Section1_ClinicalSummary": {
+      "Indications": [
+        "Chronic weight management in adults with obesity (BMI ≥ 30 kg/m²) or overweight (BMI ≥ 27 kg/m²) with ≥ 1 weight-related comorbidity",
+        "Weight reduction in adolescents ≥ 12 years with obesity (BMI ≥ 95th percentile for age and sex)"
+      ],
+      "PACriteria": [
+        "Age ≥ 12 years",
+        "BMI ≥ 30 kg/m² (obesity) or BMI ≥ 27 kg/m² (overweight) with ≥ 1 weight-related comorbidity",
+        "Documented trial of ≥ 3 months of lifestyle modification (diet, exercise, behavior) with inadequate weight loss",
+        "Failure, intolerance, or contraindication to alternative anti-obesity medications",
+        "Absence of personal/family history of medullary thyroid carcinoma or MEN2",
+        "Not pregnant or breastfeeding",
+        "Baseline weight and BMI documented"
+      ],
+      "StepTherapyProtocols": {
+        "FirstLine": [
+          "Comprehensive lifestyle modification (diet, exercise, behavior) for ≥ 3 months",
+          "Consideration of alternative anti-obesity medications if lifestyle alone insufficient"
+        ],
+        "SecondLine": [
+          "Initiate Zepbound if lifestyle and alternative agents fail or are contraindicated",
+          "Titration: 2.5 mg weekly for 4 weeks, then 5 mg for 4 weeks, then 7.5 mg for 4 weeks, then 10 mg for 4 weeks, then 12.5 mg for 4 weeks, then 15 mg maintenance"
+        ]
+      },
+      "CoverageConsiderations": {
+        "Medicaid": [
+          "Prior authorization required",
+          "Documentation of BMI ≥ 30 kg/m² or ≥ 27 kg/m² with comorbidity",
+          "Failure of lifestyle modification and alternative agents"
+        ],
+        "MedicarePartD": [
+          "Prior authorization required",
+          "Similar BMI and lifestyle failure documentation"
+        ],
+        "CommercialPlans": [
+          "Prior authorization required",
+          "BMI documentation and lifestyle failure required"
+        ]
+      },
+      "ReauthorizationRequirements": [
+        "≥ 5% weight loss from baseline after 12 weeks on 15 mg",
+        "If < 5% loss, discontinue or consider alternative therapy",
+        "Ongoing adherence and tolerability assessment"
+      ],
+      "GuidelineReferences": {
+        "1": {
+          "Title": "FDA Label – Zepbound (tirzepatide)",
+          "URL": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2023/217180s000lbl.pdf"
+        },
+        "2": {
+          "Title": "American Diabetes Association Standards of Care in Diabetes – 2024",
+          "URL": "https://diabetesjournals.org/care/issue/47/Supplement_1"
+        }
+      }
+    },
+    "Section2_AppealReadyNarrative": "This patient meets criteria for chronic weight management with Zepbound (tirzepatide), a GLP-1/GIP dual agonist approved for obesity and overweight with weight-related comorbidities. The patient has documented obesity (BMI ≥ 30 kg/m²) or overweight (BMI ≥ 27 kg/m²) with comorbidity, and has failed ≥ 3 months of comprehensive lifestyle modification with inadequate weight loss. Alternative anti-obesity medications are contraindicated or not tolerated. Zepbound is FDA-approved and recommended by ADA for weight management in appropriate patients. Reauthorization will be based on ≥ 5% weight loss at 12 weeks; without this, therapy should be discontinued. Delaying escalation increases risk of obesity-related complications."
+  }
+}
