@@ -1,0 +1,682 @@
+[
+  {
+    "DrugName": "Ozempic",
+    "Generic": "semaglutide",
+    "Class": "GLP-1 receptor agonist (subcutaneous injection)",
+    "Section1_ClinicalSummary": {
+      "Indications": [
+        "Type 2 diabetes mellitus in adults as adjunct to diet and exercise¹",
+        "Reduction of major adverse cardiovascular events in adults with T2DM and established cardiovascular disease¹"
+      ],
+      "PACriteria": [
+        "ICD-10 diagnosis of Type 2 diabetes mellitus (E11.x)",
+        "Baseline A1C ≥ 7.0% unless contraindication to other agents",
+        "Trial of metformin unless contraindicated²",
+        "Inadequate glycemic control after ≥ 3 months of oral therapy²",
+        "Documentation of cardiovascular disease if used for CV risk reduction¹"
+      ],
+      "StepTherapyProtocols": {
+        "FirstLine": [
+          "Metformin titrated to maximally tolerated dose²"
+        ],
+        "SecondLine": [
+          "Addition of GLP-1 receptor agonist or SGLT2 inhibitor based on comorbidity profile²"
+        ]
+      },
+      "ReauthorizationRequirements": [
+        "A1C reduction ≥ 0.5–1% from baseline",
+        "Demonstrated adherence",
+        "Weight reduction documentation if applicable"
+      ],
+      "CoverageConsiderations": {
+        "Medicaid": [
+          "Requires metformin failure unless contraindicated",
+          "May require sulfonylurea trial"
+        ],
+        "MedicarePartD": [
+          "Often requires step therapy with metformin",
+          "Quantity limits per 28-day supply"
+        ],
+        "CommercialPlans": [
+          "Preferential formulary placement may vary",
+          "CV indication may require documentation of ASCVD"
+        ]
+      },
+      "GuidelineReferences": {
+        "1": {
+          "Title": "FDA Label – Ozempic (semaglutide)",
+          "URL": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2023/209637s020lbl.pdf"
+        },
+        "2": {
+          "Title": "American Diabetes Association Standards of Care in Diabetes – 2024",
+          "URL": "https://diabetesjournals.org/care/issue/47/Supplement_1"
+        }
+      }
+    },
+    "Section2_AppealReadyNarrative": "This patient has Type 2 diabetes mellitus with inadequate glycemic control despite optimized metformin therapy. Per the American Diabetes Association Standards of Care in Diabetes – 2024, GLP-1 receptor agonists are recommended in patients requiring additional glycemic lowering and cardiovascular risk reduction. Ozempic is FDA-approved for glycemic control and cardiovascular risk reduction in adults with Type 2 diabetes. Delay in escalation increases risk of microvascular and macrovascular complications. Ozempic is medically necessary and consistent with FDA labeling and evidence-based guidelines."
+  },
+  {
+    "DrugName": "Wegovy",
+    "Generic": "semaglutide",
+    "Class": "GLP-1 receptor agonist (subcutaneous injection)",
+    "Section1_ClinicalSummary": {
+      "Indications": [
+        "Chronic weight management in adults with BMI ≥ 30 kg/m² or ≥ 27 kg/m² with at least one weight-related comorbidity¹"
+      ],
+      "PACriteria": [
+        "Documented BMI criteria",
+        "Documentation of ≥ 6 months structured lifestyle modification attempt",
+        "Weight-related comorbidity documentation (HTN, dyslipidemia, T2DM)"
+      ],
+      "StepTherapyProtocols": {
+        "Lifestyle": [
+          "Calorie-restricted diet and increased physical activity"
+        ]
+      },
+      "ReauthorizationRequirements": [
+        "≥ 5% weight reduction from baseline at 6 months",
+        "Demonstrated adherence"
+      ],
+      "CoverageConsiderations": {
+        "Medicaid": [
+          "Often excluded from coverage unless state plan allows anti-obesity medications"
+        ],
+        "MedicarePartD": [
+          "Generally excluded (weight-loss indication)"
+        ],
+        "CommercialPlans": [
+          "Employer plan dependent",
+          "May require documented prior lifestyle attempts"
+        ]
+      },
+      "GuidelineReferences": {
+        "1": {
+          "Title": "FDA Label – Wegovy (semaglutide)",
+          "URL": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2023/215256s007lbl.pdf"
+        }
+      }
+    },
+    "Section2_AppealReadyNarrative": "This patient meets FDA criteria for chronic weight management with BMI above threshold and weight-related comorbidity. Sustained obesity increases risk of cardiovascular disease, diabetes, and mortality. Wegovy is FDA-approved for chronic weight management and is medically necessary to reduce long-term cardiometabolic risk."
+  },
+  {
+    "DrugName": "Mounjaro",
+    "Generic": "tirzepatide",
+    "Class": "GIP/GLP-1 receptor agonist (subcutaneous injection)",
+    "Section1_ClinicalSummary": {
+      "Indications": [
+        "Type 2 diabetes mellitus as adjunct to diet and exercise¹"
+      ],
+      "PACriteria": [
+        "Diagnosis of T2DM",
+        "Inadequate control on metformin unless contraindicated"
+      ],
+      "StepTherapyProtocols": {
+        "FirstLine": [
+          "Metformin"
+        ]
+      },
+      "ReauthorizationRequirements": [
+        "Documented A1C reduction"
+      ],
+      "CoverageConsiderations": {
+        "Medicaid": [
+          "Requires metformin failure"
+        ],
+        "CommercialPlans": [
+          "Often preferred over other GLP-1s depending on contract"
+        ]
+      },
+      "GuidelineReferences": {
+        "1": {
+          "Title": "FDA Label – Mounjaro (tirzepatide)",
+          "URL": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2023/215866s008lbl.pdf"
+        }
+      }
+    },
+    "Section2_AppealReadyNarrative": "Mounjaro is FDA-approved for Type 2 diabetes management and provides significant A1C reduction. Escalation is consistent with evidence-based diabetes care."
+  },
+  {
+    "DrugName": "Zepbound",
+    "Generic": "tirzepatide",
+    "Class": "GIP/GLP-1 receptor agonist (subcutaneous injection)",
+    "Section1_ClinicalSummary": {
+      "Indications": [
+        "Chronic weight management in adults meeting BMI criteria¹"
+      ],
+      "PACriteria": [
+        "BMI ≥ 30 or ≥ 27 with comorbidity",
+        "Lifestyle modification attempt documentation"
+      ],
+      "StepTherapyProtocols": {
+        "Lifestyle": [
+          "Caloric restriction and exercise"
+        ]
+      },
+      "ReauthorizationRequirements": [
+        "≥ 5% weight reduction at 6 months"
+      ],
+      "CoverageConsiderations": {
+        "Medicaid": [
+          "Often excluded unless state-approved"
+        ],
+        "CommercialPlans": [
+          "Employer-plan dependent coverage"
+        ]
+      },
+      "GuidelineReferences": {
+        "1": {
+          "Title": "FDA Label – Zepbound (tirzepatide)",
+          "URL": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2023/217806s000lbl.pdf"
+        }
+      }
+    },
+    "Section2_AppealReadyNarrative": "Zepbound is FDA-approved for chronic weight management and is indicated for patients meeting BMI criteria with comorbid risk. Escalation supports reduction in cardiometabolic risk."
+  },
+  {
+    "DrugName": "Repatha",
+    "Generic": "evolocumab",
+    "Class": "PCSK9 inhibitor (subcutaneous injection)",
+    "Section1_ClinicalSummary": {
+      "Indications": [
+        "Adjunct to diet and maximally tolerated statin therapy for adults with primary hyperlipidemia including heterozygous familial hypercholesterolemia¹",
+        "Reduction of risk of myocardial infarction, stroke, and coronary revascularization in adults with established cardiovascular disease¹",
+        "Homozygous familial hypercholesterolemia¹"
+      ],
+      "PACriteria": [
+        "Diagnosis of ASCVD or familial hypercholesterolemia",
+        "LDL-C ≥ 70 mg/dL despite maximally tolerated statin therapy²",
+        "Trial of ezetimibe unless contraindicated²",
+        "Documentation of statin intolerance if applicable"
+      ],
+      "StepTherapyProtocols": {
+        "FirstLine": [
+          "High-intensity statin therapy unless contraindicated²"
+        ],
+        "SecondLine": [
+          "Addition of ezetimibe²"
+        ],
+        "ThirdLine": [
+          "PCSK9 inhibitor if LDL remains above target despite therapy²"
+        ]
+      },
+      "ReauthorizationRequirements": [
+        "LDL reduction from baseline",
+        "Demonstrated adherence",
+        "Ongoing ASCVD risk documentation"
+      ],
+      "CoverageConsiderations": {
+        "Medicaid": [
+          "Requires statin failure and ezetimibe trial",
+          "May require genetic confirmation for FH"
+        ],
+        "MedicarePartD": [
+          "Strict LDL documentation required",
+          "Step therapy enforced"
+        ],
+        "CommercialPlans": [
+          "Often requires LDL ≥ 100 mg/dL for primary prevention",
+          "ASCVD documentation required for CV risk reduction indication"
+        ]
+      },
+      "GuidelineReferences": {
+        "1": {
+          "Title": "FDA Label – Repatha (evolocumab)",
+          "URL": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2023/125522s027lbl.pdf"
+        },
+        "2": {
+          "Title": "2018 AHA/ACC Guideline on the Management of Blood Cholesterol",
+          "URL": "https://www.jacc.org/doi/10.1016/j.jacc.2018.11.003"
+        }
+      }
+    },
+    "Section2_AppealReadyNarrative": "This patient has established ASCVD with persistent LDL elevation despite maximally tolerated statin therapy and ezetimibe. Per the 2018 AHA/ACC Guideline on the Management of Blood Cholesterol, PCSK9 inhibitor therapy is recommended for patients who remain above LDL targets despite optimized therapy. Repatha is FDA-approved to reduce cardiovascular events and is medically necessary to mitigate risk of recurrent myocardial infarction or stroke."
+  },
+  {
+    "DrugName": "Farxiga",
+    "Generic": "dapagliflozin",
+    "Class": "SGLT2 inhibitor (oral)",
+    "Section1_ClinicalSummary": {
+      "Indications": [
+        "Type 2 diabetes mellitus¹",
+        "Heart failure with reduced ejection fraction¹",
+        "Chronic kidney disease¹"
+      ],
+      "PACriteria": [
+        "Diagnosis of T2DM, HFrEF, or CKD",
+        "eGFR ≥ labeling threshold¹",
+        "Optimized standard therapy for HF or CKD prior to initiation²"
+      ],
+      "StepTherapyProtocols": {
+        "Diabetes": [
+          "Metformin unless contraindicated²"
+        ],
+        "HeartFailure": [
+          "Guideline-directed medical therapy including ACEi/ARB/ARNI and beta-blocker²"
+        ],
+        "CKD": [
+          "ACEi or ARB unless contraindicated²"
+        ]
+      },
+      "ReauthorizationRequirements": [
+        "Improved A1C if diabetic",
+        "Stable renal function",
+        "Reduction in HF hospitalization"
+      ],
+      "CoverageConsiderations": {
+        "Medicaid": [
+          "May require metformin trial for diabetes indication",
+          "HF/CKD indication may bypass diabetes step therapy"
+        ],
+        "MedicarePartD": [
+          "Often formulary preferred SGLT2",
+          "Quantity limits standard"
+        ],
+        "CommercialPlans": [
+          "Typically covered for HF and CKD",
+          "May require documentation of ejection fraction"
+        ]
+      },
+      "GuidelineReferences": {
+        "1": {
+          "Title": "FDA Label – Farxiga (dapagliflozin)",
+          "URL": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2023/202293s026lbl.pdf"
+        },
+        "2": {
+          "Title": "2022 AHA/ACC/HFSA Guideline for the Management of Heart Failure",
+          "URL": "https://www.jacc.org/doi/10.1016/j.jacc.2021.12.012"
+        }
+      }
+    },
+    "Section2_AppealReadyNarrative": "This patient has guideline-defined heart failure and/or chronic kidney disease. Per the 2022 AHA/ACC/HFSA Guideline for the Management of Heart Failure, SGLT2 inhibitors are foundational therapy in HFrEF regardless of diabetes status. Farxiga is FDA-approved for these indications and is medically necessary to reduce hospitalization and cardiovascular mortality."
+  },
+  {
+    "DrugName": "Xarelto",
+    "Generic": "rivaroxaban",
+    "Class": "Factor Xa inhibitor (oral anticoagulant)",
+    "Section1_ClinicalSummary": {
+      "Indications": [
+        "Nonvalvular atrial fibrillation to reduce stroke risk¹",
+        "Treatment and secondary prevention of DVT and PE¹",
+        "Postoperative thromboprophylaxis¹"
+      ],
+      "PACriteria": [
+        "Diagnosis of AFib, DVT, or PE",
+        "CHADS-VASc documentation for AFib",
+        "No contraindication such as active bleeding"
+      ],
+      "StepTherapyProtocols": {
+        "AFib": [
+          "Direct oral anticoagulant preferred over warfarin unless contraindicated²"
+        ]
+      },
+      "ReauthorizationRequirements": [
+        "Ongoing indication",
+        "No major bleeding event"
+      ],
+      "CoverageConsiderations": {
+        "Medicaid": [
+          "Often preferred DOAC",
+          "May require trial of warfarin in some states"
+        ],
+        "MedicarePartD": [
+          "Tier 3-4 placement common",
+          "Quantity limits enforced"
+        ],
+        "CommercialPlans": [
+          "Preferred over warfarin for AFib"
+        ]
+      },
+      "GuidelineReferences": {
+        "1": {
+          "Title": "FDA Label – Xarelto (rivaroxaban)",
+          "URL": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2023/022406s040lbl.pdf"
+        },
+        "2": {
+          "Title": "2019 AHA/ACC/HRS Focused Update on Atrial Fibrillation",
+          "URL": "https://www.jacc.org/doi/10.1016/j.jacc.2019.01.011"
+        }
+      }
+    },
+    "Section2_AppealReadyNarrative": "This patient has nonvalvular atrial fibrillation with elevated thromboembolic risk. Direct oral anticoagulants are preferred over warfarin in eligible patients per the 2019 AHA/ACC/HRS Focused Update on Atrial Fibrillation. Xarelto is FDA-approved for stroke prevention in AFib and is medically necessary to reduce thromboembolic risk."
+  },
+  {
+    "DrugName": "Eliquis",
+    "Generic": "apixaban",
+    "Class": "Factor Xa inhibitor (oral anticoagulant)",
+    "Section1_ClinicalSummary": {
+      "Indications": [
+        "Nonvalvular atrial fibrillation¹",
+        "Treatment of DVT and PE¹",
+        "Secondary prevention of VTE¹"
+      ],
+      "PACriteria": [
+        "Documented AFib or VTE",
+        "CHADS-VASc score documentation for AFib",
+        "No contraindication to anticoagulation"
+      ],
+      "StepTherapyProtocols": {
+        "AFib": [
+          "DOAC preferred over warfarin unless contraindicated²"
+        ]
+      },
+      "ReauthorizationRequirements": [
+        "Ongoing need for anticoagulation",
+        "No major bleeding complications"
+      ],
+      "CoverageConsiderations": {
+        "Medicaid": [
+          "Often preferred DOAC",
+          "Warfarin step therapy may apply"
+        ],
+        "MedicarePartD": [
+          "Widely covered",
+          "Tier-based copay structure"
+        ],
+        "CommercialPlans": [
+          "Preferred DOAC in many formularies"
+        ]
+      },
+      "GuidelineReferences": {
+        "1": {
+          "Title": "FDA Label – Eliquis (apixaban)",
+          "URL": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2023/202155s041lbl.pdf"
+        },
+        "2": {
+          "Title": "2019 AHA/ACC/HRS Focused Update on Atrial Fibrillation",
+          "URL": "https://www.jacc.org/doi/10.1016/j.jacc.2019.01.011"
+        }
+      }
+    },
+    "Section2_AppealReadyNarrative": "This patient has nonvalvular atrial fibrillation requiring anticoagulation for stroke prevention. Per AHA/ACC/HRS atrial fibrillation guidance, DOAC therapy is preferred over warfarin in eligible patients. Eliquis is FDA-approved and medically necessary to reduce thromboembolic risk."
+  },
+  {
+    "DrugName": "Humira",
+    "Generic": "adalimumab",
+    "Class": "TNF-alpha inhibitor (subcutaneous injection)",
+    "Section1_ClinicalSummary": {
+      "Indications": [
+        "Rheumatoid arthritis¹",
+        "Psoriatic arthritis¹",
+        "Ankylosing spondylitis¹",
+        "Crohn’s disease¹",
+        "Ulcerative colitis¹",
+        "Plaque psoriasis¹"
+      ],
+      "PACriteria": [
+        "Confirmed autoimmune diagnosis",
+        "Moderate-to-severe disease activity",
+        "Failure or intolerance of at least one conventional DMARD (e.g., methotrexate)²",
+        "Documentation of disease activity scoring when applicable"
+      ],
+      "StepTherapyProtocols": {
+        "Rheumatologic": [
+          "Methotrexate maximally tolerated dose²",
+          "Combination DMARD therapy if indicated²"
+        ],
+        "IBD": [
+          "Trial of corticosteroids and/or immunomodulator prior to biologic²"
+        ]
+      },
+      "ReauthorizationRequirements": [
+        "Documented clinical response",
+        "Improvement in disease activity index",
+        "No serious adverse infection"
+      ],
+      "CoverageConsiderations": {
+        "Medicaid": [
+          "Requires DMARD failure",
+          "May prefer biosimilar first"
+        ],
+        "MedicarePartD": [
+          "Often specialty tier",
+          "Biosimilar step therapy common"
+        ],
+        "CommercialPlans": [
+          "Prefer biosimilar adalimumab",
+          "May require prior biologic failure depending on indication"
+        ]
+      },
+      "GuidelineReferences": {
+        "1": {
+          "Title": "FDA Label – Humira (adalimumab)",
+          "URL": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2023/125057s425lbl.pdf"
+        },
+        "2": {
+          "Title": "2021 American College of Rheumatology Guideline for the Treatment of Rheumatoid Arthritis",
+          "URL": "https://www.rheumatology.org/Portals/0/Files/ACR-Guideline-for-RA-Treatment-2021.pdf"
+        }
+      }
+    },
+    "Section2_AppealReadyNarrative": "This patient has moderate-to-severe autoimmune disease with inadequate response to conventional DMARD therapy. Per the American College of Rheumatology guidelines, escalation to biologic therapy is appropriate when disease activity remains uncontrolled. Humira is FDA-approved for this indication and is medically necessary to prevent irreversible joint damage and systemic complications."
+  },
+  {
+    "DrugName": "CPAP",
+    "Generic": "Continuous Positive Airway Pressure Device",
+    "Class": "Durable Medical Equipment (DME)",
+    "Section1_ClinicalSummary": {
+      "Indications": [
+        "Obstructive sleep apnea confirmed by sleep study¹"
+      ],
+      "PACriteria": [
+        "AHI ≥ 15 events/hour OR",
+        "AHI ≥ 5 with symptoms (daytime sleepiness, hypertension, cardiovascular disease)¹",
+        "Sleep study documentation required"
+      ],
+      "StepTherapyProtocols": {
+        "Initial": [
+          "Diagnostic polysomnography or home sleep apnea testing¹"
+        ]
+      },
+      "ReauthorizationRequirements": [
+        "Usage ≥ 4 hours per night on 70% of nights within first 90 days",
+        "Compliance download documentation"
+      ],
+      "CoverageConsiderations": {
+        "Medicaid": [
+          "Compliance monitoring required",
+          "Rental-to-purchase model common"
+        ],
+        "MedicarePartB": [
+          "Strict adherence documentation required within 90 days",
+          "Face-to-face visit documentation required"
+        ],
+        "CommercialPlans": [
+          "Prior authorization common",
+          "May require repeat sleep study if device replacement requested"
+        ]
+      },
+      "GuidelineReferences": {
+        "1": {
+          "Title": "American Academy of Sleep Medicine Clinical Practice Guideline for PAP Therapy",
+          "URL": "https://jcsm.aasm.org/doi/10.5664/jcsm.7640"
+        }
+      }
+    },
+    "Section2_AppealReadyNarrative": "This patient has documented obstructive sleep apnea meeting diagnostic criteria. Untreated OSA increases risk of cardiovascular disease, arrhythmia, stroke, and motor vehicle accidents. CPAP therapy is guideline-recommended first-line treatment and is medically necessary."
+  },
+  {
+    "DrugName": "Dexcom G7",
+    "Generic": "Continuous Glucose Monitor",
+    "Class": "Continuous Glucose Monitoring System (DME or Pharmacy Benefit)",
+    "Section1_ClinicalSummary": {
+      "Indications": [
+        "Diabetes mellitus requiring intensive insulin therapy¹"
+      ],
+      "PACriteria": [
+        "Type 1 or Type 2 diabetes",
+        "Multiple daily insulin injections or insulin pump therapy",
+        "Frequent glucose monitoring requirement"
+      ],
+      "StepTherapyProtocols": {
+        "Initial": [
+          "Self-monitoring blood glucose with fingerstick prior to CGM"
+        ]
+      },
+      "ReauthorizationRequirements": [
+        "Demonstrated ongoing insulin therapy",
+        "Documented improved glycemic metrics"
+      ],
+      "CoverageConsiderations": {
+        "Medicaid": [
+          "Requires insulin-dependent diabetes",
+          "May require endocrinology attestation"
+        ],
+        "MedicarePartB": [
+          "Covered for insulin-treated patients",
+          "Recent face-to-face visit required"
+        ],
+        "CommercialPlans": [
+          "Often pharmacy benefit coverage",
+          "May require prior authorization"
+        ]
+      },
+      "GuidelineReferences": {
+        "1": {
+          "Title": "FDA Device Information – Dexcom G7",
+          "URL": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K213919"
+        }
+      }
+    },
+    "Section2_AppealReadyNarrative": "This patient requires intensive insulin therapy with risk of hypoglycemia and glycemic variability. Continuous glucose monitoring improves A1C, reduces hypoglycemia, and supports safer insulin titration. Dexcom G7 is medically necessary to optimize glycemic control and reduce acute complications."
+  },
+  {
+    "DrugName": "Abilify",
+    "Generic": "aripiprazole",
+    "Class": "Atypical antipsychotic (oral and injectable)",
+    "Section1_ClinicalSummary": {
+      "Indications": [
+        "Schizophrenia¹",
+        "Bipolar I disorder¹",
+        "Adjunctive treatment of major depressive disorder¹"
+      ],
+      "PACriteria": [
+        "DSM-5 diagnosis documentation",
+        "Failure of first-line therapy when used for MDD augmentation²",
+        "Assessment of suicide risk and psychosis severity"
+      ],
+      "StepTherapyProtocols": {
+        "MDD": [
+          "Trial of SSRI or SNRI prior to augmentation²"
+        ],
+        "Schizophrenia": [
+          "Antipsychotic therapy required"
+        ]
+      },
+      "ReauthorizationRequirements": [
+        "Clinical response",
+        "Absence of intolerable side effects"
+      ],
+      "CoverageConsiderations": {
+        "Medicaid": [
+          "Preferred atypical antipsychotic in many formularies",
+          "Long-acting injectable may require specialty authorization"
+        ],
+        "MedicarePartD": [
+          "Tier placement varies",
+          "LAI subject to PA"
+        ],
+        "CommercialPlans": [
+          "Generic preferred over brand"
+        ]
+      },
+      "GuidelineReferences": {
+        "1": {
+          "Title": "FDA Label – Abilify (aripiprazole)",
+          "URL": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2023/021436s049lbl.pdf"
+        },
+        "2": {
+          "Title": "APA Practice Guideline for the Treatment of Patients with Major Depressive Disorder",
+          "URL": "https://psychiatryonline.org/doi/book/10.1176/appi.books.9780890425787"
+        }
+      }
+    },
+    "Section2_AppealReadyNarrative": "This patient has a DSM-5 diagnosed psychiatric condition requiring antipsychotic therapy. Aripiprazole is FDA-approved for this indication and is guideline-supported for augmentation in treatment-resistant depression. Continuation is medically necessary to prevent relapse and psychiatric decompensation."
+  },
+  {
+    "DrugName": "Benlysta",
+    "Generic": "belimumab",
+    "Class": "B-lymphocyte stimulator (BLyS) inhibitor (monoclonal antibody; IV or SC)",
+    "Section1_ClinicalSummary": {
+      "Indications": [
+        "Active systemic lupus erythematosus (SLE) in patients ≥ 5 years receiving standard therapy¹",
+        "Active lupus nephritis in patients ≥ 5 years receiving standard therapy¹"
+      ],
+      "PACriteria": [
+        "ICD-10 diagnosis of systemic lupus erythematosus (M32.x)",
+        "Documentation meeting 2019 ACR/EULAR classification criteria",
+        "Positive ANA and/or anti-dsDNA antibodies",
+        "Persistent moderate disease activity (e.g., SLEDAI ≥ 6) despite standard therapy²³",
+        "Active serologic markers (elevated anti-dsDNA and/or low complement levels)²³",
+        "Failure or inadequate response to hydroxychloroquine unless contraindicated²",
+        "Inability to taper prednisone to ≤ 7.5 mg/day due to flare or disease activity²",
+        "Trial of at least one conventional immunosuppressant (MMF, AZA, MTX) with dose and duration documented²³",
+        "For lupus nephritis: renal biopsy class III, IV, or V if available⁴",
+        "For lupus nephritis: persistent proteinuria ≥ 1 g/g or inadequate partial renal response after 6–12 months of induction therapy⁴"
+      ],
+      "StepTherapyProtocols": {
+        "SLEStandardTherapy": [
+          "Hydroxychloroquine at weight-appropriate dosing (≤ 5 mg/kg/day long-term goal)²",
+          "Glucocorticoid therapy with taper toward ≤ 5–7.5 mg/day within 6 months when feasible²"
+        ],
+        "ConventionalImmunosuppressants": [
+          "Mycophenolate mofetil 2–3 g/day for ≥ 12 weeks²",
+          "Azathioprine 2–3 mg/kg/day for ≥ 12 weeks²",
+          "Methotrexate for arthritis-dominant manifestations²",
+          "Cyclophosphamide for organ- or life-threatening disease²"
+        ],
+        "LupusNephritisProtocol": [
+          "Glucocorticoids plus mycophenolic acid analog (2–3 g/day)⁴",
+          "Consider triple therapy (GC + MPAA + belimumab or CNI) if inadequate response⁴",
+          "Escalation recommended if failure to achieve partial renal response by 6–12 months⁴"
+        ]
+      },
+      "ReauthorizationRequirements": [
+        "≥ 4-point reduction in SLEDAI score consistent with SRI-4 benchmark¹",
+        "Reduction in flare frequency²",
+        "Successful corticosteroid dose reduction²",
+        "For lupus nephritis: reduction in proteinuria and stabilization or improvement in eGFR⁴"
+      ],
+      "CoverageConsiderations": {
+        "Medicaid": [
+          "Requires documentation of hydroxychloroquine and immunosuppressant failure",
+          "May require rheumatology specialist attestation",
+          "Lupus nephritis may require biopsy class documentation"
+        ],
+        "MedicarePartD": [
+          "Prior authorization required",
+          "Steroid dependence documentation common",
+          "Reauthorization tied to objective SLEDAI improvement"
+        ],
+        "CommercialPlans": [
+          "Often require ≥ 6 months of inadequate response to conventional therapy",
+          "Autoantibody-positive SLE frequently required",
+          "Separate approval pathways for SLE vs lupus nephritis indication"
+        ],
+        "OperationalConsiderations": [
+          "IV formulation may require infusion center authorization",
+          "SC formulation may process under pharmacy benefit",
+          "Site-of-care optimization often reviewed"
+        ]
+      },
+      "GuidelineReferences": {
+        "1": {
+          "Title": "FDA Label – Benlysta (belimumab)",
+          "URL": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2023/125370s078lbl.pdf"
+        },
+        "2": {
+          "Title": "2025 American College of Rheumatology Guideline for the Treatment of Systemic Lupus Erythematosus",
+          "URL": "https://acrjournals.onlinelibrary.wiley.com/doi/10.1002/art.43009"
+        },
+        "3": {
+          "Title": "2019 Update of the EULAR Recommendations for the Management of Systemic Lupus Erythematosus",
+          "URL": "https://ard.bmj.com/content/78/6/736"
+        },
+        "4": {
+          "Title": "2024 American College of Rheumatology Guideline for the Screening, Treatment, and Management of Lupus Nephritis",
+          "URL": "https://acrjournals.onlinelibrary.wiley.com/doi/10.1002/acr.25279"
+        }
+      }
+    },
+    "Section2_AppealReadyNarrative": "This patient has confirmed systemic lupus erythematosus with persistent moderate disease activity, active serologic markers, and steroid dependence despite optimized hydroxychloroquine and conventional immunosuppressant therapy. Per the 2025 American College of Rheumatology Guideline for the Treatment of Systemic Lupus Erythematosus and the 2019 EULAR Recommendations, escalation to biologic therapy is appropriate when disease activity remains uncontrolled and glucocorticoid tapering is not achievable. If lupus nephritis is present, the 2024 American College of Rheumatology Lupus Nephritis Guideline supports incorporation of belimumab into combination therapy when partial renal response is not achieved within 6–12 months. Delayed biologic escalation increases risk of flare, cumulative organ damage, prolonged glucocorticoid toxicity, and hospitalization. Benlysta is FDA-approved and medically necessary."
+  }
+]
