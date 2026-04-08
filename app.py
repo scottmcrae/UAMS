@@ -1074,7 +1074,8 @@ if (fda_go or _search_mode == "fda") and keyword.strip():
 
                 _text_preview = ""
                 if _text:
-                    _iu_m = _re.search(r'[-\s]{10,}INDICATIONS AND USAGE[-\s]{5,}', _text)
+                    _iu_m = _re.search(r'-{5,}INDICATIONS AND USAGE-{5,}', _text) \
+                            or _re.search(r'INDICATIONS AND USAGE', _text)
                     _display_text = _text[_iu_m.start():] if _iu_m else _text
                     _preview_raw = _display_text[:3000].replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
                     _text_preview = (
