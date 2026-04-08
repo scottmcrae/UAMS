@@ -1074,14 +1074,8 @@ if (fda_go or _search_mode == "fda") and keyword.strip():
 
                 _text_preview = ""
                 if _text:
-                    # Start display at the dashed INDICATIONS AND USAGE header
-                    _iu_m = _re.search(r'-+\s*INDICATIONS AND USAGE\s*-+', _text, _re.IGNORECASE)
-                    if _iu_m:
-                        _display_text = _text[_iu_m.start():]
-                    else:
-                        # Fall back to MEDICATION GUIDE if no dashed header found
-                        _mg_m = _re.search(r'MEDICATION GUIDE', _text, _re.IGNORECASE)
-                        _display_text = _text[_mg_m.start():] if _mg_m else _text
+                    _iu_m = _re.search(r'-+\s*INDICATIONS AND USAGE\s*-+', _text)
+                    _display_text = _text[_iu_m.start():] if _iu_m else _text
                     _preview_raw = _display_text[:3000].replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
                     _text_preview = (
                         f'<div style="margin-top:8px;">'
